@@ -1,5 +1,6 @@
-# Shikikit
+[![codecov](https://codecov.io/gh/iwdt/shikikit/graph/badge.svg)](https://codecov.io/gh/iwdt/shikikit)
 
+# Shikikit
 Ruby toolkit for the [Shikimori API](https://shikimori.one)
 
 ## TODO:
