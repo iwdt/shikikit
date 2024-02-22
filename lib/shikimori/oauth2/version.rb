@@ -3,6 +3,6 @@
 module Shikimori
   module OAuth2
     # @return [String] Semantic version of library
-    VERSION = '0.1.0'
+    VERSION = '1.0.0'
   end
 end

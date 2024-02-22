@@ -1,11 +1,11 @@
 PATH
   remote: .
   specs:
-    omniauth-shikimori-oauth2 (0.1.0)
+    omniauth-shikimori-oauth2 (1.0.0)
       omniauth-oauth2 (~> 1.8)
-      shikimori-oauth2 (~> 0.1.0)
-    shikimori-api (0.1.0)
-    shikimori-oauth2 (0.1.0)
+      shikimori-oauth2 (~> 1.0.0)
+    shikimori-api (1.0.0)
+    shikimori-oauth2 (1.0.0)
       oauth2 (~> 2.0.0)
 
 GEM

@@ -37,5 +37,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'omniauth-oauth2', '~> 1.8'
-  spec.add_dependency 'shikimori-oauth2', '~> 0.1.0'
+  spec.add_dependency 'shikimori-oauth2', '~> 1.0.0'
 end
