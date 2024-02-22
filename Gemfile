@@ -24,7 +24,7 @@ group :test do
   gem 'rack-test'
   gem 'rspec'
   gem 'simplecov'
-  gem 'simplecov-lcov'
+  gem 'simplecov-cobertura'
   gem 'vcr'
   gem 'webmock'
 end

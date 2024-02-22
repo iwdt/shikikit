@@ -1,13 +1,9 @@
 # frozen_string_literal: true
 
 require 'simplecov'
+require 'simplecov-cobertura'
 
-if ENV['CI']
-  require 'simplecov-lcov'
-
-  SimpleCov::Formatter::LcovFormatter.config.report_with_single_file = true
-  SimpleCov.formatter = SimpleCov::Formatter::LcovFormatter
-end
+SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter if ENV['CI']
 
 SimpleCov.start do
   add_group 'API', ['lib/shikimori-api.rb', 'lib/shikimori/api.rb', 'lib/shikimori/api']

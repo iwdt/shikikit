@@ -38,8 +38,7 @@ jobs:
       run: bundle exec steep check
     - name: Test with RSpec
       run: bundle exec rspec
-    - name: Add code coverage comment
-      uses: romeovs/lcov-reporter-action@v0.2.21
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v4.0.1
       with:
-        lcov-file: ./coverage/lcov/shikikit.lcov
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.CODECOV_TOKEN }}
