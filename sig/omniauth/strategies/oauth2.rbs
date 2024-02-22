@@ -1,0 +1,23 @@
+module OmniAuth
+  module Strategies
+    class OAuth2
+      interface _Response
+        def parsed: () -> ::Hash[_ToS, Object]
+      end
+
+      interface _AccessToken
+        def get: (::URI::Generic) -> _Response
+      end
+
+      def self.option: (Symbol, ?Object) -> void
+      def self.uid: () { -> Object } -> void
+      def self.info: () { -> ::Hash[_ToS, Object] } -> void
+
+      @raw_info: ::Hash[String, Object]
+      def raw_info: -> ::Hash[_ToS, Object]
+      def self.raw_info: -> ::Hash[_ToS, Object]
+      def access_token: -> _AccessToken
+      def deep_symbolize: (::Hash[_ToS, Object]) -> ::Hash[_ToS, Object]
+    end
+  end
+end

@@ -1,0 +1,41 @@
+module Shikimori
+  module API
+    class V1
+      include Videos
+      include Users
+      include UserRates
+      include UserImages
+      include Topics
+      include TopicIgnores
+      include Styles
+      include Studios
+      include Stats
+      include Reviews
+      include Ranobe
+      include Publishers
+      include People
+      include Messages
+      include Mangas
+      include Ignores
+      include Genres
+      include Friends
+      include Forums
+      include Favorites
+      include Dialogs
+      include Constants
+      include Comments
+      include Clubs
+      include Characters
+      include Calendars
+      include Bans
+      include Appear
+      include Animes
+      include Achievements
+
+      attr_reader rest: REST
+      attr_reader base_url: ::Shikimori::API::URI
+
+      def initialize: (base_url: ::Shikimori::API::URI, rest: REST) -> void
+    end
+  end
+end

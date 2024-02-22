@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://fakemori.example/api/animes/1/videos
+    body:
+      encoding: UTF-8
+      string: '{"video":{"name":"Test (soon delete it!)","kind":"ed","url":"https://fakey.be/dQw4w9WgXcQ"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      User-Agent:
+      - "<APP_NAME>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Host:
+      - fakemori.example
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Wed, 21 Feb 2024 23:40:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.018333'
+      Vary:
+      - Accept, Origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"id":1,"url":"https://fakey.be/dQw4w9WgXcQ","image_url":"http://img.faketube.com/vi/dQw4w9WgXcQ/hqdefault.jpg","player_url":"http://faketube.com/embed/dQw4w9WgXcQ","name":"Test
+        (soon delete it!)","kind":"ed","hosting":"faketube"}'
+  recorded_at: Wed, 21 Feb 2024 23:40:43 GMT
+recorded_with: VCR 6.2.0

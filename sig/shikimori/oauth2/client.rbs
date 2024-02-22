@@ -1,0 +1,15 @@
+module Shikimori
+  module OAuth2
+    class Client < ::OAuth2::Client
+      SCOPE_JOIN_SYMBOL: String
+      SCOPE_JOIN_ENCODED_SYMBOL: String
+      @config: Config
+      @app_name: String
+      attr_reader site: URI::Generic
+
+      def initialize: (String client_id, String client_secret, ?Hash[_ToS, untyped] options, ?app_name: String) -> void
+
+      def config: -> Config
+    end
+  end
+end

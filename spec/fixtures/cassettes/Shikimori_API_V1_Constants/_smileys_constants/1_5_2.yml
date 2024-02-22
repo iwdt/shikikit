@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fakemori.example/api/constants/smileys
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      User-Agent:
+      - "<APP_NAME>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Host:
+      - fakemori.example
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Feb 2024 17:33:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.011685'
+      Vary:
+      - Accept, Origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"bbcode":":)","path":"/images/smileys/:).gif"},{"bbcode":":D","path":"/images/smileys/:D.gif"},{"bbcode":":-D","path":"/images/smileys/:-D.gif"},{"bbcode":":lol:","path":"/images/smileys/:lol:.gif"},{"bbcode":":ololo:","path":"/images/smileys/:ololo:.gif"},{"bbcode":":evil:","path":"/images/smileys/:evil:.gif"},{"bbcode":"+_+","path":"/images/smileys/+_+.gif"},{"bbcode":":cool:","path":"/images/smileys/:cool:.gif"},{"bbcode":":thumbup:","path":"/images/smileys/:thumbup:.gif"},{"bbcode":":yahoo:","path":"/images/smileys/:yahoo:.gif"},{"bbcode":":tea2:","path":"/images/smileys/:tea2:.gif"},{"bbcode":":star:","path":"/images/smileys/:star:.gif"},{"bbcode":":oh:","path":"/images/smileys/:oh:.gif"},{"bbcode":":shy:","path":"/images/smileys/:shy:.gif"},{"bbcode":":shy2:","path":"/images/smileys/:shy2:.gif"},{"bbcode":":hurray:","path":"/images/smileys/:hurray:.gif"},{"bbcode":":-P","path":"/images/smileys/:-P.gif"},{"bbcode":":roll:","path":"/images/smileys/:roll:.gif"},{"bbcode":":!:","path":"/images/smileys/:!:.gif"},{"bbcode":":watching:","path":"/images/smileys/:watching:.gif"},{"bbcode":":love:","path":"/images/smileys/:love:.gif"},{"bbcode":":love2:","path":"/images/smileys/:love2:.gif"},{"bbcode":":bunch:","path":"/images/smileys/:bunch:.gif"},{"bbcode":":perveted:","path":"/images/smileys/:perveted:.gif"},{"bbcode":":(","path":"/images/smileys/:(.gif"},{"bbcode":":very
+        sad:","path":"/images/smileys/:very sad:.gif"},{"bbcode":":depressed:","path":"/images/smileys/:depressed:.gif"},{"bbcode":":depressed2:","path":"/images/smileys/:depressed2:.gif"},{"bbcode":":hopeless:","path":"/images/smileys/:hopeless:.gif"},{"bbcode":":very
+        sad2:","path":"/images/smileys/:very sad2:.gif"},{"bbcode":":-(","path":"/images/smileys/:-(.gif"},{"bbcode":":cry:","path":"/images/smileys/:cry:.gif"},{"bbcode":":cry6:","path":"/images/smileys/:cry6:.gif"},{"bbcode":":Cry2:","path":"/images/smileys/:Cry2:.gif"},{"bbcode":":Cry3:","path":"/images/smileys/:Cry3:.gif"},{"bbcode":":Cry4:","path":"/images/smileys/:Cry4:.gif"},{"bbcode":":-o","path":"/images/smileys/:-o.gif"},{"bbcode":":shock:","path":"/images/smileys/:shock:.gif"},{"bbcode":":shock2:","path":"/images/smileys/:shock2:.gif"},{"bbcode":":scream:","path":"/images/smileys/:scream:.gif"},{"bbcode":":dont
+        want:","path":"/images/smileys/:dont want:.gif"},{"bbcode":":noooo:","path":"/images/smileys/:noooo:.gif"},{"bbcode":":scared:","path":"/images/smileys/:scared:.gif"},{"bbcode":":shocked2:","path":"/images/smileys/:shocked2:.gif"},{"bbcode":":shocked3:","path":"/images/smileys/:shocked3:.gif"},{"bbcode":":shocked4:","path":"/images/smileys/:shocked4:.gif"},{"bbcode":":tea
+        shock:","path":"/images/smileys/:tea shock:.gif"},{"bbcode":":frozen3:","path":"/images/smileys/:frozen3:.gif"},{"bbcode":":angry4:","path":"/images/smileys/:angry4:.gif"},{"bbcode":":revenge:","path":"/images/smileys/:revenge:.gif"},{"bbcode":":evil2:","path":"/images/smileys/:evil2:.gif"},{"bbcode":":twisted:","path":"/images/smileys/:twisted:.gif"},{"bbcode":":angry:","path":"/images/smileys/:angry:.gif"},{"bbcode":":angry3:","path":"/images/smileys/:angry3:.gif"},{"bbcode":":angry5:","path":"/images/smileys/:angry5:.gif"},{"bbcode":":angry6:","path":"/images/smileys/:angry6:.gif"},{"bbcode":":cold:","path":"/images/smileys/:cold:.gif"},{"bbcode":":strange4:","path":"/images/smileys/:strange4:.gif"},{"bbcode":":ball:","path":"/images/smileys/:ball:.gif"},{"bbcode":":evil3:","path":"/images/smileys/:evil3:.gif"},{"bbcode":":8):","path":"/images/smileys/:8):.gif"},{"bbcode":":oh2:","path":"/images/smileys/:oh2:.gif"},{"bbcode":":ooph:","path":"/images/smileys/:ooph:.gif"},{"bbcode":":wink:","path":"/images/smileys/:wink:.gif"},{"bbcode":":dunno:","path":"/images/smileys/:dunno:.gif"},{"bbcode":":dont
+        listen:","path":"/images/smileys/:dont listen:.gif"},{"bbcode":":hypno:","path":"/images/smileys/:hypno:.gif"},{"bbcode":":advise:","path":"/images/smileys/:advise:.gif"},{"bbcode":":bored:","path":"/images/smileys/:bored:.gif"},{"bbcode":":disappointment:","path":"/images/smileys/:disappointment:.gif"},{"bbcode":":hunf:","path":"/images/smileys/:hunf:.gif"},{"bbcode":":hot:","path":"/images/smileys/:hot:.gif"},{"bbcode":":hot2:","path":"/images/smileys/:hot2:.gif"},{"bbcode":":hot3:","path":"/images/smileys/:hot3:.gif"},{"bbcode":":stress:","path":"/images/smileys/:stress:.gif"},{"bbcode":":strange3:","path":"/images/smileys/:strange3:.gif"},{"bbcode":":strange2:","path":"/images/smileys/:strange2:.gif"},{"bbcode":":strange1:","path":"/images/smileys/:strange1:.gif"},{"bbcode":":Bath2:","path":"/images/smileys/:Bath2:.gif"},{"bbcode":":strange:","path":"/images/smileys/:strange:.gif"},{"bbcode":":hope:","path":"/images/smileys/:hope:.gif"},{"bbcode":":hope3:","path":"/images/smileys/:hope3:.gif"},{"bbcode":":diplom:","path":"/images/smileys/:diplom:.gif"},{"bbcode":":hi:","path":"/images/smileys/:hi:.gif"},{"bbcode":":bye:","path":"/images/smileys/:bye:.gif"},{"bbcode":":sleep:","path":"/images/smileys/:sleep:.gif"},{"bbcode":":bow:","path":"/images/smileys/:bow:.gif"},{"bbcode":":Warning:","path":"/images/smileys/:Warning:.gif"},{"bbcode":":Ban:","path":"/images/smileys/:Ban:.gif"},{"bbcode":":Im
+        dead:","path":"/images/smileys/:Im dead:.gif"},{"bbcode":":sick:","path":"/images/smileys/:sick:.gif"},{"bbcode":":s1:","path":"/images/smileys/:s1:.gif"},{"bbcode":":s3:","path":"/images/smileys/:s3:.gif"},{"bbcode":":s2:","path":"/images/smileys/:s2:.gif"},{"bbcode":":happy_cry:","path":"/images/smileys/:happy_cry:.gif"},{"bbcode":":ill:","path":"/images/smileys/:ill:.gif"},{"bbcode":":sad2:","path":"/images/smileys/:sad2:.gif"},{"bbcode":":bullied:","path":"/images/smileys/:bullied:.gif"},{"bbcode":":bdl2:","path":"/images/smileys/:bdl2:.gif"},{"bbcode":":Happy
+        Birthday:","path":"/images/smileys/:Happy Birthday:.gif"},{"bbcode":":flute:","path":"/images/smileys/:flute:.gif"},{"bbcode":":cry5:","path":"/images/smileys/:cry5:.gif"},{"bbcode":":gaze:","path":"/images/smileys/:gaze:.gif"},{"bbcode":":hope2:","path":"/images/smileys/:hope2:.gif"},{"bbcode":":sleepy:","path":"/images/smileys/:sleepy:.gif"},{"bbcode":":study:","path":"/images/smileys/:study:.gif"},{"bbcode":":study2:","path":"/images/smileys/:study2:.gif"},{"bbcode":":study3:","path":"/images/smileys/:study3:.gif"},{"bbcode":":gamer:","path":"/images/smileys/:gamer:.gif"},{"bbcode":":animal:","path":"/images/smileys/:animal:.gif"},{"bbcode":":caterpillar:","path":"/images/smileys/:caterpillar:.gif"},{"bbcode":":cold2:","path":"/images/smileys/:cold2:.gif"},{"bbcode":":shocked:","path":"/images/smileys/:shocked:.gif"},{"bbcode":":frozen:","path":"/images/smileys/:frozen:.gif"},{"bbcode":":frozen2:","path":"/images/smileys/:frozen2:.gif"},{"bbcode":":kia:","path":"/images/smileys/:kia:.gif"},{"bbcode":":interested:","path":"/images/smileys/:interested:.gif"},{"bbcode":":happy:","path":"/images/smileys/:happy:.gif"},{"bbcode":":happy3:","path":"/images/smileys/:happy3:.gif"},{"bbcode":":water:","path":"/images/smileys/:water:.gif"},{"bbcode":":dance:","path":"/images/smileys/:dance:.gif"},{"bbcode":":liar:","path":"/images/smileys/:liar:.gif"},{"bbcode":":prcl:","path":"/images/smileys/:prcl:.gif"},{"bbcode":":play:","path":"/images/smileys/:play:.gif"},{"bbcode":":s4:","path":"/images/smileys/:s4:.gif"},{"bbcode":":s:","path":"/images/smileys/:s:.gif"},{"bbcode":":bath:","path":"/images/smileys/:bath:.gif"},{"bbcode":":kiss:","path":"/images/smileys/:kiss:.gif"},{"bbcode":":whip:","path":"/images/smileys/:whip:.gif"},{"bbcode":":relax:","path":"/images/smileys/:relax:.gif"},{"bbcode":":smoker:","path":"/images/smileys/:smoker:.gif"},{"bbcode":":smoker2:","path":"/images/smileys/:smoker2:.gif"},{"bbcode":":bdl:","path":"/images/smileys/:bdl:.gif"},{"bbcode":":cool2:","path":"/images/smileys/:cool2:.gif"},{"bbcode":":V:","path":"/images/smileys/:V:.gif"},{"bbcode":":V2:","path":"/images/smileys/:V2:.gif"},{"bbcode":":V3:","path":"/images/smileys/:V3:.gif"},{"bbcode":":sarcasm:","path":"/images/smileys/:sarcasm:.gif"},{"bbcode":":angry2:","path":"/images/smileys/:angry2:.gif"},{"bbcode":":kya:","path":"/images/smileys/:kya:.gif"}]'
+  recorded_at: Wed, 21 Feb 2024 17:33:50 GMT
+recorded_with: VCR 6.2.0

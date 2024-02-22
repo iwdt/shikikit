@@ -1,0 +1,18 @@
+module Shikimori
+  module API
+    class RequestError < StandardError
+    end
+
+    class NotFoundError < RequestError
+    end
+
+    class ForbiddenError < RequestError
+    end
+
+    class BadRequestError < RequestError
+      attr_reader errors: Array[String]
+
+      def initialize: (Array[String] | { "errors" => Array[String] }) -> void
+    end
+  end
+end

@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://fakemori.example/api/user_rates/anime/cleanup
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      User-Agent:
+      - "<APP_NAME>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Host:
+      - fakemori.example
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Feb 2024 23:05:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.021696'
+      Vary:
+      - Accept, Origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJub3RpY2UiOiLQktGL0L/QvtC70L3QtdC90LAg0L7Rh9C40YHRgtC60LAg0YLQstC+0LXQs9C+INGB0L/QuNGB0LrQsCDQsNC90LjQvNC1INC4INGC0LLQvtC10Lkg0LjRgdGC0L7RgNC40Lgg0L/QviDQsNC90LjQvNC1In0=
+  recorded_at: Wed, 21 Feb 2024 23:05:23 GMT
+recorded_with: VCR 6.2.0

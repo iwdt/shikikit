@@ -1,0 +1,10 @@
+module OAuth2
+  class Client
+    type accessToken = untyped
+
+    def initialize: (String client_id, String client_secret, ?Hash[_ToS, untyped] options) -> void
+
+    def authorize_url: (?Hash[_ToS, untyped] params) -> String
+    def get_token: (Hash[_ToS, untyped] params, ?Hash[_ToS, untyped] access_token_opts, ?nil extract_access_token) -> accessToken?
+  end
+end

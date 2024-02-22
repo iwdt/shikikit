@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fakemori.example/api/animes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      User-Agent:
+      - "<APP_NAME>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Host:
+      - fakemori.example
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Feb 2024 21:24:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.006522'
+      Vary:
+      - Accept, Origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjQ5MzAzLCJuYW1lIjoiQWxpY2UgdG8gVGhlcmVzZSBubyBNYWJvcm9zaGkgS291am91IiwicnVzc2lhbiI6ItCk0LDQsdGA0LjQutCwINC40LvQu9GO0LfQuNC5INCQ0LvQuNGB0Ysg0Lgg0KLQtdGA0LXQt9GLIiwiaW1hZ2UiOnsib3JpZ2luYWwiOiIvc3lzdGVtL2FuaW1lcy9vcmlnaW5hbC80OTMwMy5qcGc/MTcwNzcwODg4MCIsInByZXZpZXciOiIvc3lzdGVtL2FuaW1lcy9wcmV2aWV3LzQ5MzAzLmpwZz8xNzA3NzA4ODgwIiwieDk2IjoiL3N5c3RlbS9hbmltZXMveDk2LzQ5MzAzLmpwZz8xNzA3NzA4ODgwIiwieDQ4IjoiL3N5c3RlbS9hbmltZXMveDQ4LzQ5MzAzLmpwZz8xNzA3NzA4ODgwIn0sInVybCI6Ii9hbmltZXMvNDkzMDMtYWxpY2UtdG8tdGhlcmVzZS1uby1tYWJvcm9zaGkta291am91Iiwia2luZCI6Im1vdmllIiwic2NvcmUiOiI3LjI2Iiwic3RhdHVzIjoicmVsZWFzZWQiLCJlcGlzb2RlcyI6MSwiZXBpc29kZXNfYWlyZWQiOjAsImFpcmVkX29uIjoiMjAyMy0wOS0xNSIsInJlbGVhc2VkX29uIjpudWxsfV0=
+  recorded_at: Tue, 20 Feb 2024 21:24:07 GMT
+recorded_with: VCR 6.2.0

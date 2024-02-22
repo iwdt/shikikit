@@ -1,0 +1,12 @@
+module Shikimori
+  module API
+    class Client
+      DEFAULT_SITE_URL: String
+
+      attr_reader v1: V1
+      attr_reader v2: V2
+
+      def initialize: (?String site, app_name: String, access_token: String, refresh_token: String) -> void
+    end
+  end
+end

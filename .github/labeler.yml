@@ -1,0 +1,51 @@
+API:
+  - "lib/shikimori-api.rb"
+  - "lib/shikimori/api.rb"
+  - "lib/shikimori/api/**/*.rb"
+  - "spec/shikimori/api/**/*.rb"
+  - "sig/shikimori/api.rbs"
+  - "sig/shikimori/api/**/*.rbs"
+
+API v1:
+  - "lib/shikimori/api/v1.rb"
+  - "lib/shikimori/api/v1/**/*.rb"
+  - "spec/shikimori/api/v1/**/*.rb"
+  - "sig/shikimori/api/v1.rbs"
+  - "sig/shikimori/api/v1/**/*.rbs"
+
+API v2:
+  - "lib/shikimori/api/v2.rb"
+  - "lib/shikimori/api/v2/**/*.rb"
+  - "spec/shikimori/api/v2/**/*.rb"
+  - "sig/shikimori/api/v2.rbs"
+  - "sig/shikimori/api/v2/**/*.rbs"
+
+OAuth2:
+  - "lib/shikimori-oauth2.rb"
+  - "lib/shikimori/oauth2.rb"
+  - "lib/shikimori/oauth2/**/*.rb"
+  - "spec/shikimori/oauth2/**/*.rb"
+  - "spec/shikimori/oauth2_spec.rb"
+  - "sig/oauth2/**/*.rbs"
+  - "sig/shikimori/oauth2.rbs"
+  - "sig/shikimori/oauth2/**/*.rbs"
+
+OmniAuth:
+  - "lib/omniauth-shikimori-oauth2.rb"
+  - "lib/omniauth/**/*.rb"
+  - "spec/omniauth/**/*.rb"
+  - "sig/omniauth/**/*.rbs"
+
+Configuration:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "Steepfile"
+  - "rbs_collection.lock.yaml"
+  - "rbs_collection.yaml"
+  - "**/*.gemspec"
+  - ".rubocop.yml"
+  - ".gitignore"
+  - ".rspec"
+
+Documentation:
+  - "**/*.md"

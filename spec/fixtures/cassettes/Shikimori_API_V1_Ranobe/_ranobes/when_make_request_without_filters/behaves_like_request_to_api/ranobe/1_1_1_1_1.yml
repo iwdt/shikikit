@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fakemori.example/api/ranobe
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      User-Agent:
+      - "<APP_NAME>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Host:
+      - fakemori.example
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Feb 2024 19:16:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.068373'
+      Vary:
+      - Accept, Origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjEwMDQwNywibmFtZSI6IlNlaWNob3UgQ2hlYXQgZGUgTmFuZGVtbyBEZWtpcnUgeW91IG5pIE5hdHRhIGdhLCBNdXNob2t1IGRha2Ugd2EgWWFtZXJhcmVuYWkgeW91IGRlc3UiLCJydXNzaWFuIjoi0K8g0LzQvtCz0YMg0LTQtdC70LDRgtGMINCy0YHRkSDRgdC+INGB0LLQvtC40Lwg0YfQuNGC0L7QvCDRgNC+0YHRgtCwLCDQvdC+INCy0YHRkSDRgNCw0LLQvdC+INC+0YHRgtCw0L3Rg9GB0Ywg0LHQtdC30YDQsNCx0L7RgtC90YvQvCIsImltYWdlIjp7Im9yaWdpbmFsIjoiL3N5c3RlbS9tYW5nYXMvb3JpZ2luYWwvMTAwNDA3LmpwZz8xNzAyMzU1Nzg2IiwicHJldmlldyI6Ii9zeXN0ZW0vbWFuZ2FzL3ByZXZpZXcvMTAwNDA3LmpwZz8xNzAyMzU1Nzg2IiwieDk2IjoiL3N5c3RlbS9tYW5nYXMveDk2LzEwMDQwNy5qcGc/MTcwMjM1NTc4NiIsIng0OCI6Ii9zeXN0ZW0vbWFuZ2FzL3g0OC8xMDA0MDcuanBnPzE3MDIzNTU3ODYifSwidXJsIjoiL21hbmdhcy8xMDA0MDctc2VpY2hvdS1jaGVhdC1kZS1uYW5kZW1vLWRla2lydS15b3UtbmktbmF0dGEtZ2EtbXVzaG9rdS1kYWtlLXdhLXlhbWVyYXJlbmFpLXlvdS1kZXN1Iiwia2luZCI6ImxpZ2h0X25vdmVsIiwic2NvcmUiOiI3LjIzIiwic3RhdHVzIjoib25nb2luZyIsInZvbHVtZXMiOjAsImNoYXB0ZXJzIjowLCJhaXJlZF9vbiI6IjIwMTYtMDktMTAiLCJyZWxlYXNlZF9vbiI6bnVsbH1d
+  recorded_at: Wed, 21 Feb 2024 19:16:07 GMT
+recorded_with: VCR 6.2.0

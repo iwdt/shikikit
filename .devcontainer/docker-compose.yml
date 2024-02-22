@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  shikikit:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ..:/home/developer/shikikit:cached
+    command: sleep infinity
+    environment:
+      - TZ=Europe/Moscow
+    user: developer

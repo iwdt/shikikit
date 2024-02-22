@@ -1,0 +1,28 @@
+module Shikimori
+  module API
+    class V1
+      module Users
+        attr_reader rest: REST
+
+        def users: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def user: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def user_info: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def whoami: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def sign_out: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def user_friends: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def user_clubs: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def user_anime_rates: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def user_manga_rates: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def user_favorites: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def user_messages: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def user_unread_messages: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def user_history: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def user_bans: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

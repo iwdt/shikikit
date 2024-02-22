@@ -1,0 +1,15 @@
+module Shikimori
+  module API
+    class V1
+      module Appear
+        attr_reader rest: REST
+
+        def create_appear: (?comment_ids: Array[_ToS], ?topic_ids: Array[_ToS], ?headers: Hash[String, String] | nil, **untyped) -> bool
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

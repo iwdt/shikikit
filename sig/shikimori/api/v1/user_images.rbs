@@ -1,0 +1,15 @@
+module Shikimori
+  module API
+    class V1
+      module UserImages
+        attr_reader rest: REST
+
+        def create_user_image: (File, ?linked_type: 'Comment' | nil, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

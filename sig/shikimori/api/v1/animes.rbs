@@ -1,0 +1,23 @@
+module Shikimori
+  module API
+    class V1
+      module Animes
+        attr_reader rest: REST
+
+        def animes: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def anime: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def anime_roles: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def anime_similar: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def anime_related: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def anime_screenshots: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def anime_franchise: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def anime_external_links: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def anime_topics: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

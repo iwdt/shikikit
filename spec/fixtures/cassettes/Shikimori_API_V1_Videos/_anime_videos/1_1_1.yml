@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fakemori.example/api/animes/1/videos
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      User-Agent:
+      - "<APP_NAME>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Host:
+      - fakemori.example
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Feb 2024 23:38:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.012189'
+      Vary:
+      - Accept, Origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjEyNTQsInVybCI6Imh0dHBzOi8veW91dHUuYmUvV0tuVmFEd1VnNXMiLCJpbWFnZV91cmwiOiJodHRwOi8vaW1nLnlvdXR1YmUuY29tL3ZpL1dLblZhRHdVZzVzL2hxZGVmYXVsdC5qcGciLCJwbGF5ZXJfdXJsIjoiaHR0cDovL3lvdXR1YmUuY29tL2VtYmVkL1dLblZhRHdVZzVzIiwibmFtZSI6IiMyOiBcIlNwYWNlIExpb25cIiBieSBUaGUgU2VhdGJlbHRzIiwia2luZCI6Im90aGVyIiwiaG9zdGluZyI6InlvdXR1YmUifSx7ImlkIjo1NTk1MiwidXJsIjoiaHR0cHM6Ly95b3V0dS5iZS9VRkZhMFFvSFd2RSIsImltYWdlX3VybCI6Imh0dHA6Ly9pbWcueW91dHViZS5jb20vdmkvVUZGYTBRb0hXdkUvaHFkZWZhdWx0LmpwZyIsInBsYXllcl91cmwiOiJodHRwOi8veW91dHViZS5jb20vZW1iZWQvVUZGYTBRb0hXdkUiLCJuYW1lIjoiT1AxIEZ1bGwiLCJraW5kIjoib3AiLCJob3N0aW5nIjoieW91dHViZSJ9LHsiaWQiOjU0ODUzLCJ1cmwiOiJodHRwczovL3lvdXR1LmJlL09oTndja0NMemlzIiwiaW1hZ2VfdXJsIjoiaHR0cDovL2ltZy55b3V0dWJlLmNvbS92aS9PaE53Y2tDTHppcy9ocWRlZmF1bHQuanBnIiwicGxheWVyX3VybCI6Imh0dHA6Ly95b3V0dWJlLmNvbS9lbWJlZC9PaE53Y2tDTHppcyIsIm5hbWUiOiLQotGA0LXQudC70LXRgCAoRnVuaW1hdGlvbikiLCJraW5kIjoicHYiLCJob3N0aW5nIjoieW91dHViZSJ9LHsiaWQiOjI5MTg5LCJ1cmwiOiJodHRwczovL3lvdXR1LmJlL2V5STYzNW8ycG1rIiwiaW1hZ2VfdXJsIjoiaHR0cDovL2ltZy55b3V0dWJlLmNvbS92aS9leUk2MzVvMnBtay9ocWRlZmF1bHQuanBnIiwicGxheWVyX3VybCI6Imh0dHA6Ly95b3V0dWJlLmNvbS9lbWJlZC9leUk2MzVvMnBtayIsIm5hbWUiOiIjMTogXCJUaGUgUmVhbCBGb2xrIEJsdWVzXCIgYnkgVGhlIFNlYXRiZWx0cyBmZWF0LiBNYWkgWWFtYW5lIChGdWxsIFZlcnNpb24pIiwia2luZCI6Im90aGVyIiwiaG9zdGluZyI6InlvdXR1YmUifSx7ImlkIjoxMzYxLCJ1cmwiOiJodHRwczovL3ZrLmNvbS92aWRlby0xOTcwNTEyNDNfNDU2MjM5MDMxIiwiaW1hZ2VfdXJsIjoiaHR0cDovL3N1bjYtMTMudXNlcmFwaS5jb20vTnBzZmZKUG1xREctcm8zVXo0NUlmNDJqVjROdmRIWHFUZkhaamcvY2FQbFBaLVJXVncuanBnIiwicGxheWVyX3VybCI6Imh0dHA6Ly92ay5jb20vdmlkZW9fZXh0LnBocD9vaWQ9LTE5NzA1MTI0M1x1MDAyNmlkPTQ1NjIzOTAzMVx1MDAyNmhhc2g9Zjk1NjkxMjJkYWYzMjU0ZCIsIm5hbWUiOiJFRDEgwqtUaGUgUmVhbCBGb2xrIEJsdWVzwrsg4oCUIFRoZSBTZWF0YmVsdHMgZmVhdC4g0JzQsNC5INCv0LzQsNC90Y0iLCJraW5kIjoiZWQiLCJob3N0aW5nIjoidmsifSx7ImlkIjozMTMwMSwidXJsIjoiaHR0cHM6Ly92ay5jb20vdmlkZW8tMTk3MDUxMjQzXzQ1NjIzOTAzMCIsImltYWdlX3VybCI6Imh0dHA6Ly9zdW42LTE5LnVzZXJhcGkuY29tL1RNUlhtQmZfRjBlYkgxRk0wbGl5THk3eTM1Q21iN01GQWZZbGl3L3hFbFpyR1BpRnc0LmpwZyIsInBsYXllcl91cmwiOiJodHRwOi8vdmsuY29tL3ZpZGVvX2V4dC5waHA/b2lkPS0xOTcwNTEyNDNcdTAwMjZpZD00NTYyMzkwMzBcdTAwMjZoYXNoPWM2ZWY0YzRmYmFjNmU1NTAiLCJuYW1lIjoiRUQyIMKrU3BhY2UgTGlvbsK7IOKAlCBUaGUgU2VhdGJlbHRzIiwia2luZCI6ImVkIiwiaG9zdGluZyI6InZrIn0seyJpZCI6MTI1MywidXJsIjoiaHR0cHM6Ly92ay5jb20vdmlkZW8tMTk3MDUxMjQzXzQ1NjIzOTAyNyIsImltYWdlX3VybCI6Imh0dHA6Ly9zdW42LTEzLnVzZXJhcGkuY29tL083enZkSDFrWUhhdWdRRFBMamVLUEMtRmRHdGk5SGpCRHpacF93L0FyaFloZTFWemZVLmpwZyIsInBsYXllcl91cmwiOiJodHRwOi8vdmsuY29tL3ZpZGVvX2V4dC5waHA/b2lkPS0xOTcwNTEyNDNcdTAwMjZpZD00NTYyMzkwMjdcdTAwMjZoYXNoPTIwOGI5ZTg5ODRkMjczYWYiLCJuYW1lIjoiT1AxIMKrVGFuayHCuyDigJQgVGhlIFNlYXRiZWx0cyIsImtpbmQiOiJvcCIsImhvc3RpbmciOiJ2ayJ9LHsiaWQiOjMxODM2LCJ1cmwiOiJodHRwczovL3ZrLmNvbS92aWRlby0xOTcwNTEyNDNfNDU2MjM5MDI5IiwiaW1hZ2VfdXJsIjoiaHR0cDovL3N1bjYtMTQudXNlcmFwaS5jb20vQXY5aFlWWWNYU09DTDZaQkVTNW5JZFA1Wms5NTV2NEVBU2s3b3cvYkFaMjQ1MkkzbXMuanBnIiwicGxheWVyX3VybCI6Imh0dHA6Ly92ay5jb20vdmlkZW9fZXh0LnBocD9vaWQ9LTE5NzA1MTI0M1x1MDAyNmlkPTQ1NjIzOTAyOVx1MDAyNmhhc2g9MWFlYzNkYmI0ODAxMmI3ZCIsIm5hbWUiOiJFRDMgwqtCbHVlwrsg4oCUIFRoZSBTZWF0YmVsdHMgZmVhdC4g0JzQsNC5INCv0LzQsNC90Y0iLCJraW5kIjoiZWQiLCJob3N0aW5nIjoidmsifSx7ImlkIjoyODg1MywidXJsIjoiaHR0cHM6Ly95b3V0dS5iZS9UZEJmZ3dIbVFzUSIsImltYWdlX3VybCI6Imh0dHA6Ly9pbWcueW91dHViZS5jb20vdmkvVGRCZmd3SG1Rc1EvaHFkZWZhdWx0LmpwZyIsInBsYXllcl91cmwiOiJodHRwOi8veW91dHViZS5jb20vZW1iZWQvVGRCZmd3SG1Rc1EiLCJuYW1lIjoi0KLRgNC10LnQu9C10YAgKEZ1bmltYXRpb24pIiwia2luZCI6InB2IiwiaG9zdGluZyI6InlvdXR1YmUifSx7ImlkIjo2OTYxLCJ1cmwiOiJodHRwczovL3lvdXR1LmJlLzBSdXlsUHAtdVVFIiwiaW1hZ2VfdXJsIjoiaHR0cDovL2ltZy55b3V0dWJlLmNvbS92aS8wUnV5bFBwLXVVRS9ocWRlZmF1bHQuanBnIiwicGxheWVyX3VybCI6Imh0dHA6Ly95b3V0dWJlLmNvbS9lbWJlZC8wUnV5bFBwLXVVRSIsIm5hbWUiOiJFRDMgRnVsbCAiLCJraW5kIjoiZWQiLCJob3N0aW5nIjoieW91dHViZSJ9LHsiaWQiOjgxOTUsInVybCI6Imh0dHBzOi8veW91dHUuYmUva0d6bmVBS3RBZ2ciLCJpbWFnZV91cmwiOiJodHRwOi8vaW1nLnlvdXR1YmUuY29tL3ZpL2tHem5lQUt0QWdnL2hxZGVmYXVsdC5qcGciLCJwbGF5ZXJfdXJsIjoiaHR0cDovL3lvdXR1YmUuY29tL2VtYmVkL2tHem5lQUt0QWdnIiwibmFtZSI6IkJsdS1yYXkgQk9YIiwia2luZCI6ImNtIiwiaG9zdGluZyI6InlvdXR1YmUifV0=
+  recorded_at: Wed, 21 Feb 2024 23:38:36 GMT
+recorded_with: VCR 6.2.0

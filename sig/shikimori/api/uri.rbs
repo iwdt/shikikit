@@ -1,0 +1,10 @@
+module Shikimori
+  module API
+    class URI < URI::Generic
+      attr_reader url: ::URI::Generic
+
+      def initialize: (_ToS) -> void
+      def join: (*(::_ToStr | ::URI::Generic)) -> URI
+    end
+  end
+end

@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fakemori.example/api/users/whoami
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      User-Agent:
+      - "<APP_NAME>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Host:
+      - fakemori.example
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Feb 2024 23:15:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.012768'
+      Vary:
+      - Accept, Origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":1,"nickname":"shikikit","avatar":"https://desu.fakemori.example/system/users/x48/1.png?1708556419","image":{"x160":"https://desu.fakemori.example/system/users/x160/1.png?1708556419","x148":"https://desu.fakemori.example/system/users/x148/1.png?1708556419","x80":"https://desu.fakemori.example/system/users/x80/1.png?1708556419","x64":"https://desu.fakemori.example/system/users/x64/1.png?1708556419","x48":"https://desu.fakemori.example/system/users/x48/1.png?1708556419","x32":"https://desu.fakemori.example/system/users/x32/1.png?1708556419","x16":"https://desu.fakemori.example/system/users/x16/1.png?1708556419"},"last_online_at":"2024-02-22T02:05:25.075+03:00","url":"https://fakemori.example/shikikit","name":null,"sex":null,"website":null,"birth_on":null,"full_years":null,"locale":"ru"}'
+  recorded_at: Wed, 21 Feb 2024 23:15:34 GMT
+recorded_with: VCR 6.2.0

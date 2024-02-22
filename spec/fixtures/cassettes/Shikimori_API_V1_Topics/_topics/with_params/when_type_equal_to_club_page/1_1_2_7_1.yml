@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fakemori.example/api/topics?limit=2&page=1&type=Topics::EntryTopics::ClubPageTopic
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      User-Agent:
+      - "<APP_NAME>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Host:
+      - fakemori.example
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Feb 2024 22:00:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.035604'
+      Vary:
+      - Accept, Origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjUwMDA0OCwidG9waWNfdGl0bGUiOiLQk9Cw0LvQtdGA0LXRjyDQv9C+0LTQstCw0LvQsCIsImJvZHkiOiLQotC+0L/QuNC6INC+0LHRgdGD0LbQtNC10L3QuNGPIFtjbHViX3BhZ2U9Mzk4OV3RgdGC0YDQsNC90LjRhtGLWy9jbHViX3BhZ2VdIFtjbHViPTQyNDFd0LrQu9GD0LHQsFsvY2x1Yl0uIiwiaHRtbF9ib2R5Ijoi0KLQvtC/0LjQuiDQvtCx0YHRg9C20LTQtdC90LjRjyBcdTAwM2NhIGhyZWY9XCJodHRwczovL3NoaWtpbW9yaS5vbmUvY2x1YnMvNDI0MS1wb2R2YWwtc3Rhbm5pc2EvcGFnZXMvMzk4OS1nYWxlcmV5YS1wb2R2YWxhXCIgdGl0bGU9XCLQk9Cw0LvQtdGA0LXRjyDQv9C+0LTQstCw0LvQsFwiIGNsYXNzPVwiYi1saW5rXCJcdTAwM2XRgdGC0YDQsNC90LjRhtGLXHUwMDNjL2FcdTAwM2UgXHUwMDNjYSBocmVmPVwiaHR0cHM6Ly9zaGlraW1vcmkub25lL2NsdWJzLzQyNDEtcG9kdmFsLXN0YW5uaXNhXCIgdGl0bGU9XCLQn9C+0LTQstCw0Lsg0KHRgtCw0L3QvdC40YHQsFwiIGNsYXNzPVwiYi1saW5rXCJcdTAwM2XQutC70YPQsdCwXHUwMDNjL2FcdTAwM2UuIiwiaHRtbF9mb290ZXIiOiIiLCJjcmVhdGVkX2F0IjoiMjAyMy0wMy0wNVQxOTozMToxOC4yNDArMDM6MDAiLCJjb21tZW50c19jb3VudCI6Mjc4MywiZm9ydW0iOnsiaWQiOjEwLCJwb3NpdGlvbiI6MjAsIm5hbWUiOiLQmtC70YPQsdGLIiwicGVybWFsaW5rIjoiY2x1YnMiLCJ1cmwiOiIvZm9ydW0vY2x1YnMifSwidXNlciI6eyJpZCI6NjgzMTEwLCJuaWNrbmFtZSI6IkRTQUxUT1ZTS1kiLCJhdmF0YXIiOiJodHRwczovL2Rlc3Uuc2hpa2ltb3JpLm9uZS9zeXN0ZW0vdXNlcnMveDQ4LzY4MzExMC5wbmc/MTcwMzExMzcyNCIsImltYWdlIjp7IngxNjAiOiJodHRwczovL2Rlc3Uuc2hpa2ltb3JpLm9uZS9zeXN0ZW0vdXNlcnMveDE2MC82ODMxMTAucG5nPzE3MDMxMTM3MjQiLCJ4MTQ4IjoiaHR0cHM6Ly9kZXN1LnNoaWtpbW9yaS5vbmUvc3lzdGVtL3VzZXJzL3gxNDgvNjgzMTEwLnBuZz8xNzAzMTEzNzI0IiwieDgwIjoiaHR0cHM6Ly9kZXN1LnNoaWtpbW9yaS5vbmUvc3lzdGVtL3VzZXJzL3g4MC82ODMxMTAucG5nPzE3MDMxMTM3MjQiLCJ4NjQiOiJodHRwczovL2Rlc3Uuc2hpa2ltb3JpLm9uZS9zeXN0ZW0vdXNlcnMveDY0LzY4MzExMC5wbmc/MTcwMzExMzcyNCIsIng0OCI6Imh0dHBzOi8vZGVzdS5zaGlraW1vcmkub25lL3N5c3RlbS91c2Vycy94NDgvNjgzMTEwLnBuZz8xNzAzMTEzNzI0IiwieDMyIjoiaHR0cHM6Ly9kZXN1LnNoaWtpbW9yaS5vbmUvc3lzdGVtL3VzZXJzL3gzMi82ODMxMTAucG5nPzE3MDMxMTM3MjQiLCJ4MTYiOiJodHRwczovL2Rlc3Uuc2hpa2ltb3JpLm9uZS9zeXN0ZW0vdXNlcnMveDE2LzY4MzExMC5wbmc/MTcwMzExMzcyNCJ9LCJsYXN0X29ubGluZV9hdCI6IjIwMjQtMDItMjBUMjE6NTY6NDIuOTg4KzAzOjAwIiwidXJsIjoiaHR0cHM6Ly9zaGlraW1vcmkub25lL0RTQUxUT1ZTS1kifSwidHlwZSI6IlRvcGljczo6RW50cnlUb3BpY3M6OkNsdWJQYWdlVG9waWMiLCJsaW5rZWRfaWQiOjM5ODksImxpbmtlZF90eXBlIjoiQ2x1YlBhZ2UiLCJsaW5rZWQiOm51bGwsInZpZXdlZCI6dHJ1ZSwibGFzdF9jb21tZW50X3ZpZXdlZCI6dHJ1ZSwiZXZlbnQiOm51bGwsImVwaXNvZGUiOm51bGx9XQ==
+  recorded_at: Wed, 21 Feb 2024 22:00:49 GMT
+recorded_with: VCR 6.2.0

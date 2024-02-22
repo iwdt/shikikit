@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fakemori.example/api/clubs/1/mangas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      User-Agent:
+      - "<APP_NAME>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Host:
+      - fakemori.example
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Feb 2024 01:50:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.013422'
+      Vary:
+      - Accept, Origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjExMzAxMCwibmFtZSI6IkJha2Vtb25vZ2F0YXJpIiwicnVzc2lhbiI6ItCY0YHRgtC+0YDQuNC4INC80L7QvdGB0YLRgNC+0LIiLCJpbWFnZSI6eyJvcmlnaW5hbCI6Ii9zeXN0ZW0vbWFuZ2FzL29yaWdpbmFsLzExMzAxMC5qcGc/MTcwMjE4Mjk5NCIsInByZXZpZXciOiIvc3lzdGVtL21hbmdhcy9wcmV2aWV3LzExMzAxMC5qcGc/MTcwMjE4Mjk5NCIsIng5NiI6Ii9zeXN0ZW0vbWFuZ2FzL3g5Ni8xMTMwMTAuanBnPzE3MDIxODI5OTQiLCJ4NDgiOiIvc3lzdGVtL21hbmdhcy94NDgvMTEzMDEwLmpwZz8xNzAyMTgyOTk0In0sInVybCI6Ii9tYW5nYXMvejExMzAxMC1iYWtlbW9ub2dhdGFyaSIsImtpbmQiOiJtYW5nYSIsInNjb3JlIjoiOC41MSIsInN0YXR1cyI6InJlbGVhc2VkIiwidm9sdW1lcyI6MjIsImNoYXB0ZXJzIjowLCJhaXJlZF9vbiI6IjIwMTgtMDMtMTQiLCJyZWxlYXNlZF9vbiI6IjIwMjMtMDMtMTUifV0=
+  recorded_at: Wed, 21 Feb 2024 01:50:51 GMT
+recorded_with: VCR 6.2.0

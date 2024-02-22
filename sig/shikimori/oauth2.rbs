@@ -1,0 +1,8 @@
+module Shikimori
+  module OAuth2
+    self.@config: Config
+
+    def self.config: -> Config
+    def self.configure: { (Config) -> Config } -> void
+  end
+end

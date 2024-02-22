@@ -1,0 +1,19 @@
+module Shikimori
+  module API
+    class V1
+      module Reviews
+        attr_reader rest: REST
+
+        type opinions = 'positive' | 'neutral' | 'negative'
+
+        def create_review: ({ body: String, anime_id: Integer, opinion: opinions }, ?frontend: 'true' | 'false' | 0 | 1 | nil, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def update_review: (_ToS, { body: String, opinion: opinions }, ?frontend: 'true' | 'false' | 0 | 1 | nil, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def delete_review: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> bool
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

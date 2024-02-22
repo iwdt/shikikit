@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fakemori.example/api/topics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      User-Agent:
+      - "<APP_NAME>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Host:
+      - fakemori.example
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Feb 2024 22:00:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.034197'
+      Vary:
+      - Accept, Origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjUwNDY2MSwidG9waWNfdGl0bGUiOiJNaXg6IE1laXNlaSBTdG9yeSAybmQgU2Vhc29uIC0gTmlkb21lIG5vIE5hdHN1LCBTb3JhIG5vIE11a291IGUiLCJib2R5IjoiIiwiaHRtbF9ib2R5IjoiIiwiaHRtbF9mb290ZXIiOiIiLCJjcmVhdGVkX2F0IjoiMjAyMy0wNC0wOFQxMzowMTo0Ny4wMDArMDM6MDAiLCJjb21tZW50c19jb3VudCI6MCwiZm9ydW0iOnsiaWQiOjEsInBvc2l0aW9uIjoxLCJuYW1lIjoi0JDQvdC40LzQtSDQuCDQvNCw0L3Qs9CwIiwicGVybWFsaW5rIjoiYW5pbWFuZ2EiLCJ1cmwiOiIvZm9ydW0vYW5pbWFuZ2EifSwidXNlciI6eyJpZCI6MTQsIm5pY2tuYW1lIjoi0KfQuNC00LfRg9GA0YMt0YHQsNC9IiwiYXZhdGFyIjoiaHR0cHM6Ly9kZXN1LnNoaWtpbW9yaS5vbmUvc3lzdGVtL3VzZXJzL3g0OC8xNC5wbmc/MTQ0NzQ2MDcxMiIsImltYWdlIjp7IngxNjAiOiJodHRwczovL2Rlc3Uuc2hpa2ltb3JpLm9uZS9zeXN0ZW0vdXNlcnMveDE2MC8xNC5wbmc/MTQ0NzQ2MDcxMiIsIngxNDgiOiJodHRwczovL2Rlc3Uuc2hpa2ltb3JpLm9uZS9zeXN0ZW0vdXNlcnMveDE0OC8xNC5wbmc/MTQ0NzQ2MDcxMiIsIng4MCI6Imh0dHBzOi8vZGVzdS5zaGlraW1vcmkub25lL3N5c3RlbS91c2Vycy94ODAvMTQucG5nPzE0NDc0NjA3MTIiLCJ4NjQiOiJodHRwczovL2Rlc3Uuc2hpa2ltb3JpLm9uZS9zeXN0ZW0vdXNlcnMveDY0LzE0LnBuZz8xNDQ3NDYwNzEyIiwieDQ4IjoiaHR0cHM6Ly9kZXN1LnNoaWtpbW9yaS5vbmUvc3lzdGVtL3VzZXJzL3g0OC8xNC5wbmc/MTQ0NzQ2MDcxMiIsIngzMiI6Imh0dHBzOi8vZGVzdS5zaGlraW1vcmkub25lL3N5c3RlbS91c2Vycy94MzIvMTQucG5nPzE0NDc0NjA3MTIiLCJ4MTYiOiJodHRwczovL2Rlc3Uuc2hpa2ltb3JpLm9uZS9zeXN0ZW0vdXNlcnMveDE2LzE0LnBuZz8xNDQ3NDYwNzEyIn0sImxhc3Rfb25saW5lX2F0IjoiMjAxMS0wMS0yNVQyMjowMjowOC4wMDArMDM6MDAiLCJ1cmwiOiJodHRwczovL3NoaWtpbW9yaS5vbmUvJUQwJUE3JUQwJUI4JUQwJUI0JUQwJUI3JUQxJTgzJUQxJTgwJUQxJTgzLSVEMSU4MSVEMCVCMCVEMCVCRCJ9LCJ0eXBlIjoiVG9waWNzOjpOZXdzVG9waWMiLCJsaW5rZWRfaWQiOjUyNjE0LCJsaW5rZWRfdHlwZSI6IkFuaW1lIiwibGlua2VkIjp7ImlkIjo1MjYxNCwibmFtZSI6Ik1peDogTWVpc2VpIFN0b3J5IDJuZCBTZWFzb24gLSBOaWRvbWUgbm8gTmF0c3UsIFNvcmEgbm8gTXVrb3UgZSIsInJ1c3NpYW4iOiLQnNC40LrRgTog0JjRgdGC0L7RgNC40Y8g0JzRjdC50YHRjdC5IDIiLCJpbWFnZSI6eyJvcmlnaW5hbCI6Ii9zeXN0ZW0vYW5pbWVzL29yaWdpbmFsLzUyNjE0LmpwZz8xNzAzNDcwNTE0IiwicHJldmlldyI6Ii9zeXN0ZW0vYW5pbWVzL3ByZXZpZXcvNTI2MTQuanBnPzE3MDM0NzA1MTQiLCJ4OTYiOiIvc3lzdGVtL2FuaW1lcy94OTYvNTI2MTQuanBnPzE3MDM0NzA1MTQiLCJ4NDgiOiIvc3lzdGVtL2FuaW1lcy94NDgvNTI2MTQuanBnPzE3MDM0NzA1MTQifSwidXJsIjoiL2FuaW1lcy81MjYxNC1taXgtbWVpc2VpLXN0b3J5LTJuZC1zZWFzb24tbmlkb21lLW5vLW5hdHN1LXNvcmEtbm8tbXVrb3UtZSIsImtpbmQiOiJ0diIsInNjb3JlIjoiNi45OSIsInN0YXR1cyI6InJlbGVhc2VkIiwiZXBpc29kZXMiOjI0LCJlcGlzb2Rlc19haXJlZCI6MjQsImFpcmVkX29uIjoiMjAyMy0wNC0wMSIsInJlbGVhc2VkX29uIjoiMjAyMy0wOS0yMyJ9LCJ2aWV3ZWQiOnRydWUsImxhc3RfY29tbWVudF92aWV3ZWQiOm51bGwsImV2ZW50IjoiZXBpc29kZSIsImVwaXNvZGUiOjJ9LHsiaWQiOjUwNDY0NywidG9waWNfdGl0bGUiOiJCaXJkaWUgV2luZzogR29sZiBHaXJscycgU3RvcnkgU2Vhc29uIDIiLCJib2R5IjoiIiwiaHRtbF9ib2R5IjoiIiwiaHRtbF9mb290ZXIiOiIiLCJjcmVhdGVkX2F0IjoiMjAyMy0wNC0wOFQwNzo1MjoyNi42NzIrMDM6MDAiLCJjb21tZW50c19jb3VudCI6MCwiZm9ydW0iOnsiaWQiOjEsInBvc2l0aW9uIjoxLCJuYW1lIjoi0JDQvdC40LzQtSDQuCDQvNCw0L3Qs9CwIiwicGVybWFsaW5rIjoiYW5pbWFuZ2EiLCJ1cmwiOiIvZm9ydW0vYW5pbWFuZ2EifSwidXNlciI6eyJpZCI6MTMsIm5pY2tuYW1lIjoi0JzQsNGE0YPRji3RgtGP0L0iLCJhdmF0YXIiOiJodHRwczovL2Rlc3Uuc2hpa2ltb3JpLm9uZS9zeXN0ZW0vdXNlcnMveDQ4LzEzLnBuZz8xNDQ3NDYwNzEyIiwiaW1hZ2UiOnsieDE2MCI6Imh0dHBzOi8vZGVzdS5zaGlraW1vcmkub25lL3N5c3RlbS91c2Vycy94MTYwLzEzLnBuZz8xNDQ3NDYwNzEyIiwieDE0OCI6Imh0dHBzOi8vZGVzdS5zaGlraW1vcmkub25lL3N5c3RlbS91c2Vycy94MTQ4LzEzLnBuZz8xNDQ3NDYwNzEyIiwieDgwIjoiaHR0cHM6Ly9kZXN1LnNoaWtpbW9yaS5vbmUvc3lzdGVtL3VzZXJzL3g4MC8xMy5wbmc/MTQ0NzQ2MDcxMiIsIng2NCI6Imh0dHBzOi8vZGVzdS5zaGlraW1vcmkub25lL3N5c3RlbS91c2Vycy94NjQvMTMucG5nPzE0NDc0NjA3MTIiLCJ4NDgiOiJodHRwczovL2Rlc3Uuc2hpa2ltb3JpLm9uZS9zeXN0ZW0vdXNlcnMveDQ4LzEzLnBuZz8xNDQ3NDYwNzEyIiwieDMyIjoiaHR0cHM6Ly9kZXN1LnNoaWtpbW9yaS5vbmUvc3lzdGVtL3VzZXJzL3gzMi8xMy5wbmc/MTQ0NzQ2MDcxMiIsIngxNiI6Imh0dHBzOi8vZGVzdS5zaGlraW1vcmkub25lL3N5c3RlbS91c2Vycy94MTYvMTMucG5nPzE0NDc0NjA3MTIifSwibGFzdF9vbmxpbmVfYXQiOiIyMDIzLTA0LTE2VDIwOjQ2OjQxLjUzNCswMzowMCIsInVybCI6Imh0dHBzOi8vc2hpa2ltb3JpLm9uZS8lRDAlOUMlRDAlQjAlRDElODQlRDElODMlRDElOEUtJUQxJTgyJUQxJThGJUQwJUJEIn0sInR5cGUiOiJUb3BpY3M6Ok5ld3NUb3BpYyIsImxpbmtlZF9pZCI6NTIyMjksImxpbmtlZF90eXBlIjoiQW5pbWUiLCJsaW5rZWQiOnsiaWQiOjUyMjI5LCJuYW1lIjoiQmlyZGllIFdpbmc6IEdvbGYgR2lybHMnIFN0b3J5IFNlYXNvbiAyIiwicnVzc2lhbiI6ItCf0YLQuNGH0YzQtSDQutGA0YvQu9C+OiDQmNGB0YLQvtGA0LjRjyDQs9C+0LvRjNGE0LjRgdGC0L7QuiAyIiwiaW1hZ2UiOnsib3JpZ2luYWwiOiIvc3lzdGVtL2FuaW1lcy9vcmlnaW5hbC81MjIyOS5qcGc/MTcwMzQ3MTE0NSIsInByZXZpZXciOiIvc3lzdGVtL2FuaW1lcy9wcmV2aWV3LzUyMjI5LmpwZz8xNzAzNDcxMTQ1IiwieDk2IjoiL3N5c3RlbS9hbmltZXMveDk2LzUyMjI5LmpwZz8xNzAzNDcxMTQ1IiwieDQ4IjoiL3N5c3RlbS9hbmltZXMveDQ4LzUyMjI5LmpwZz8xNzAzNDcxMTQ1In0sInVybCI6Ii9hbmltZXMvNTIyMjktYmlyZGllLXdpbmctZ29sZi1naXJscy1zdG9yeS1zZWFzb24tMiIsImtpbmQiOiJ0diIsInNjb3JlIjoiNy42MSIsInN0YXR1cyI6InJlbGVhc2VkIiwiZXBpc29kZXMiOjEyLCJlcGlzb2Rlc19haXJlZCI6MTEsImFpcmVkX29uIjoiMjAyMy0wNC0wOCIsInJlbGVhc2VkX29uIjoiMjAyMy0wNi0yNCJ9LCJ2aWV3ZWQiOnRydWUsImxhc3RfY29tbWVudF92aWV3ZWQiOm51bGwsImV2ZW50Ijoib25nb2luZyIsImVwaXNvZGUiOm51bGx9XQ==
+  recorded_at: Wed, 21 Feb 2024 22:00:45 GMT
+recorded_with: VCR 6.2.0

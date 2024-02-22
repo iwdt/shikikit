@@ -1,0 +1,4 @@
+module OmniAuth
+  module Shikimori
+  end
+end

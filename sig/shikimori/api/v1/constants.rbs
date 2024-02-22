@@ -1,0 +1,19 @@
+module Shikimori
+  module API
+    class V1
+      module Constants
+        attr_reader rest: REST
+
+        def anime_constants: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def manga_constants: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def user_rate_constants: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def club_constants: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def smileys_constants: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

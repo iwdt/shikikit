@@ -1,0 +1,16 @@
+module Shikimori
+  module API
+    class V2
+      module TopicIgnore
+        attr_reader rest: REST
+
+        def create_topic_ignore: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def delete_topic_ignore: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> bool
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

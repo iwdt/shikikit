@@ -1,0 +1,16 @@
+module Shikimori
+  module API
+    class V2
+      include AbuseRequests
+      include EpisodeNotifications
+      include TopicIgnore
+      include UserIgnore
+      include UserRates
+
+      attr_reader rest: REST
+      attr_reader base_url: ::Shikimori::API::URI
+
+      def initialize: (base_url: ::Shikimori::API::URI, rest: REST) -> void
+    end
+  end
+end

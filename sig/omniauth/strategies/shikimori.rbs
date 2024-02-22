@@ -1,0 +1,22 @@
+module OmniAuth
+  module Strategies
+    class Shikimori < OAuth2
+      interface _Options
+        def client_id: -> String
+        def client_secret: -> String
+        def client_options: -> ::Hash[Symbol, Object]
+        def app_name: -> String
+      end
+
+      USER_INFO_PATH: String
+      @client: ::Shikimori::OAuth2::Client
+
+      attr_reader options: _Options
+      def client: -> ::Shikimori::OAuth2::Client
+
+      private
+
+      def info_uri: -> ::URI::Generic
+    end
+  end
+end

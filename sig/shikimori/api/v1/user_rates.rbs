@@ -1,0 +1,44 @@
+module Shikimori
+  module API
+    class V1
+      module UserRates
+        attr_reader rest: REST
+
+        type user_rate_creation = {
+          user_id: Integer,
+          target_id: Integer,
+          target_type: 'Anime' | 'Manga',
+          status: String,
+          score: Numeric,
+          chapters: Numeric,
+          episodes: Numeric,
+          volumes: Numeric,
+          rewatches: Numeric,
+          text: String
+        }
+
+        type user_rate_updation = {
+          status: String,
+          score: Numeric,
+          chapters: Numeric,
+          episodes: Numeric,
+          volumes: Numeric,
+          rewatches: Numeric,
+          text: String
+        }
+
+        def user_rate: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def create_user_rate: (user_rate_creation, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def update_user_rate: (_ToS, user_rate_updation, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def delete_user_rate: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> bool
+        def increment_user_rate: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> bool
+        def cleanup_user_rates: ('anime' | 'manga', ?headers: Hash[String, String] | nil, **untyped) -> bool
+        def reset_user_rates: ('anime' | 'manga', ?headers: Hash[String, String] | nil, **untyped) -> bool
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

@@ -1,0 +1,23 @@
+module Shikimori
+  module API
+    class V1
+      module Ranobe
+        attr_reader rest: REST
+
+        def ranobes: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def ranobe: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def ranobe_roles: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def ranobe_similar: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def ranobe_related: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def ranobe_screenshots: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def ranobe_franchise: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def ranobe_external_links: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def ranobe_topics: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

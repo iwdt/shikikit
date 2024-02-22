@@ -1,0 +1,44 @@
+# Extensions
+require:
+  - rubocop-performance
+  - rubocop-rspec
+  - rubocop-rake
+
+Performance:
+  Enabled: true
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.0
+
+Naming/FileName:
+  Exclude:
+    - lib/*.rb
+
+Metrics/MethodLength:
+  CountAsOne: ['array', 'heredoc', 'hash']
+  Max: 20
+
+Metrics/ClassLength:
+  CountAsOne: ['array', 'heredoc', 'hash']
+
+Metrics/BlockLength:
+  CountAsOne: ['array', 'heredoc', 'hash']
+
+RSpec/ExampleLength:
+  CountAsOne: ['array', 'heredoc', 'hash']
+
+RSpec/NestedGroups:
+  Max: 5
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 15
+
+RSpec/FilePath:
+  Enabled: false
+
+RSpec/SpecFilePathFormat:
+  Enabled: false

@@ -1,0 +1,5 @@
+module OmniAuth
+  module Shikimori
+    VERSION: String
+  end
+end

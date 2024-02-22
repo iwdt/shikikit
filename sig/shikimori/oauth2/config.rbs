@@ -1,0 +1,14 @@
+module Shikimori
+  module OAuth2
+    class Config
+      DEFAULT_SITE_URL: String
+      DEFAULT_APP_NAME: String
+
+      attr_accessor options: Hash[Symbol, untyped]
+      attr_accessor site: String
+      attr_accessor app_name: String
+
+      def initialize: (?site: String, ?app_name: String, **untyped) -> void
+    end
+  end
+end

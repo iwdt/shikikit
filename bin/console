@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+begin
+  require 'pry' if Gem::Specification.find_by_name 'pry'
+rescue Gem::MissingSpecError
+  # Ignore pry missing
+end
+
+require 'bundler/setup'
+require 'dotenv/load'
+
+require 'shikimori-api'
+require 'shikimori-oauth2'
+require 'omniauth-shikimori-oauth2'
+
+if defined?(Pry)
+  Pry.start
+else
+  require 'irb'
+  IRB.start(__FILE__)
+end

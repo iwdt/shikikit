@@ -1,0 +1,29 @@
+module Shikimori
+  module API
+    class V1
+      module Clubs
+        attr_reader rest: REST
+
+        type club_model = { name: String, description: String, display_images: bool | 1 | 0, comment_policy: 'free' | 'members' | 'admins', topic_policy: 'members' | 'admins', image_upload_policy: 'members' | 'admins' }
+
+        def clubs: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def club: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def update_club: (_ToS, club_model, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def club_animes: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def club_mangas: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def club_ranobe: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def club_characters: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def club_collections: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def club_clubs: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def club_members: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def club_images: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def club_join: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> bool
+        def club_leave: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> bool
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

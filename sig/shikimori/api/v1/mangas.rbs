@@ -1,0 +1,23 @@
+module Shikimori
+  module API
+    class V1
+      module Mangas
+        attr_reader rest: REST
+
+        def mangas: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def manga: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def manga_roles: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def manga_similar: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def manga_related: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def manga_screenshots: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def manga_franchise: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def manga_external_links: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def manga_topics: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

@@ -1,0 +1,23 @@
+module Shikimori
+  module API
+    class V1
+      module Videos
+        attr_reader rest: REST
+
+        type creation_video = {
+          name: String,
+          kind: 'pv' | 'character_trailer' | 'cm' | 'op' | 'ed' | 'op_ed_clip' | 'clip' | 'other' | 'episode_preview',
+          url: String,
+        }
+
+        def anime_videos: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def create_anime_video: (_ToS, creation_video,  ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def delete_anime_video: (anime_id: _ToS, video_id: _ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

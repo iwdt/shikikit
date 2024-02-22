@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fakemori.example/api/clubs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      User-Agent:
+      - "<APP_NAME>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Host:
+      - fakemori.example
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Feb 2024 01:14:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.039260'
+      Vary:
+      - Accept, Origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjQ0NjcsIm5hbWUiOiLQm9C+0LPQvtCy0L4g0JrRjdGC0LzQtdC90LAiLCJsb2dvIjp7Im9yaWdpbmFsIjoiL3N5c3RlbS9jbHVicy9vcmlnaW5hbC80NDY3LmpwZWc/MTY4MDAwMzk0NSIsIm1haW4iOiIvc3lzdGVtL2NsdWJzL21haW4vNDQ2Ny5qcGVnPzE2ODAwMDM5NDUiLCJ4OTYiOiIvc3lzdGVtL2NsdWJzL3g5Ni80NDY3LmpwZWc/MTY4MDAwMzk0NSIsIng3MyI6Ii9zeXN0ZW0vY2x1YnMveDczLzQ0NjcuanBlZz8xNjgwMDAzOTQ1IiwieDQ4IjoiL3N5c3RlbS9jbHVicy94NDgvNDQ2Ny5qcGVnPzE2ODAwMDM5NDUifSwiaXNfY2Vuc29yZWQiOnRydWUsImpvaW5fcG9saWN5IjoiZnJlZSIsImNvbW1lbnRfcG9saWN5IjoiZnJlZSJ9LHsiaWQiOjQ5NjQsIm5hbWUiOiJwcmludChcIkhlbGxvLCB3b3JsZCFcIikiLCJsb2dvIjp7Im9yaWdpbmFsIjoiL3N5c3RlbS9jbHVicy9vcmlnaW5hbC80OTY0LnBuZz8xNzA2NjQxNDU2IiwibWFpbiI6Ii9zeXN0ZW0vY2x1YnMvbWFpbi80OTY0LnBuZz8xNzA2NjQxNDU2IiwieDk2IjoiL3N5c3RlbS9jbHVicy94OTYvNDk2NC5wbmc/MTcwNjY0MTQ1NiIsIng3MyI6Ii9zeXN0ZW0vY2x1YnMveDczLzQ5NjQucG5nPzE3MDY2NDE0NTYiLCJ4NDgiOiIvc3lzdGVtL2NsdWJzL3g0OC80OTY0LnBuZz8xNzA2NjQxNDU2In0sImlzX2NlbnNvcmVkIjp0cnVlLCJqb2luX3BvbGljeSI6Im93bmVyX2ludml0ZSIsImNvbW1lbnRfcG9saWN5IjoibWVtYmVycyJ9XQ==
+  recorded_at: Wed, 21 Feb 2024 01:14:46 GMT
+recorded_with: VCR 6.2.0

@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fakemori.example/api/animes/1/screenshots
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      User-Agent:
+      - "<APP_NAME>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Host:
+      - fakemori.example
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Feb 2024 21:29:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.029252'
+      Vary:
+      - Accept, Origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"original":"/system/screenshots/original/b1276021bfb0fc514c35bb106361dd2bcb20f967.jpg?1521803518","preview":"/system/screenshots/x332/b1276021bfb0fc514c35bb106361dd2bcb20f967.jpg?1521803518"},{"original":"/system/screenshots/original/210f496943c6aa7c0e8d875f3d1dae235ac009b2.jpg?1521803527","preview":"/system/screenshots/x332/210f496943c6aa7c0e8d875f3d1dae235ac009b2.jpg?1521803527"},{"original":"/system/screenshots/original/007b4cfc349afc0bc516479ed6a27ffe0422c3e7.jpg?1521803540","preview":"/system/screenshots/x332/007b4cfc349afc0bc516479ed6a27ffe0422c3e7.jpg?1521803540"},{"original":"/system/screenshots/original/625915f43102eadd283f1a5f796025c9c2ef1964.jpg?1521803552","preview":"/system/screenshots/x332/625915f43102eadd283f1a5f796025c9c2ef1964.jpg?1521803552"},{"original":"/system/screenshots/original/d0f2cd49646703d2074bd88305d9bd145a234dd4.jpg?1521803566","preview":"/system/screenshots/x332/d0f2cd49646703d2074bd88305d9bd145a234dd4.jpg?1521803566"},{"original":"/system/screenshots/original/1d595c6ebecefb2faa9a2c83dbc6a3b41b9915ec.jpg?1521803573","preview":"/system/screenshots/x332/1d595c6ebecefb2faa9a2c83dbc6a3b41b9915ec.jpg?1521803573"},{"original":"/system/screenshots/original/ce236bdfe9cfa8f2b958294177609c29170a65b3.jpg?1521803583","preview":"/system/screenshots/x332/ce236bdfe9cfa8f2b958294177609c29170a65b3.jpg?1521803583"},{"original":"/system/screenshots/original/9599b4fe8fe1551de92e0aa416a92be159522b57.jpg?1521803589","preview":"/system/screenshots/x332/9599b4fe8fe1551de92e0aa416a92be159522b57.jpg?1521803589"},{"original":"/system/screenshots/original/b33580a7dce50e7edb33e618e354436398dfd46e.jpg?1521803597","preview":"/system/screenshots/x332/b33580a7dce50e7edb33e618e354436398dfd46e.jpg?1521803597"},{"original":"/system/screenshots/original/3abccf8c80d1052a2114e84ee64a99dbef01d152.jpg?1521803616","preview":"/system/screenshots/x332/3abccf8c80d1052a2114e84ee64a99dbef01d152.jpg?1521803616"},{"original":"/system/screenshots/original/cbb94327fec522c77ca3cc0d46d9ced96e31b86e.jpg?1521803628","preview":"/system/screenshots/x332/cbb94327fec522c77ca3cc0d46d9ced96e31b86e.jpg?1521803628"},{"original":"/system/screenshots/original/e37affcdd44a89894bcf532a082caa7aacca369e.jpg?1521803640","preview":"/system/screenshots/x332/e37affcdd44a89894bcf532a082caa7aacca369e.jpg?1521803640"},{"original":"/system/screenshots/original/030f26bb91965ac0ac1921a62fc89c75220b1fb2.jpg?1521803649","preview":"/system/screenshots/x332/030f26bb91965ac0ac1921a62fc89c75220b1fb2.jpg?1521803649"},{"original":"/system/screenshots/original/2094065da838f42a0178af5574a34f25a8da0b57.jpg?1521803660","preview":"/system/screenshots/x332/2094065da838f42a0178af5574a34f25a8da0b57.jpg?1521803660"},{"original":"/system/screenshots/original/a761957789050dce7de632cc9c3d4614891e7ef1.jpg?1521803670","preview":"/system/screenshots/x332/a761957789050dce7de632cc9c3d4614891e7ef1.jpg?1521803670"},{"original":"/system/screenshots/original/4996744aba3b61f7294aa02c13d339cba419f55d.jpg?1521803678","preview":"/system/screenshots/x332/4996744aba3b61f7294aa02c13d339cba419f55d.jpg?1521803678"},{"original":"/system/screenshots/original/c24b140d6e5099a1865f7c3da388eb7a59637b9c.jpg?1521803687","preview":"/system/screenshots/x332/c24b140d6e5099a1865f7c3da388eb7a59637b9c.jpg?1521803687"},{"original":"/system/screenshots/original/0ac54d21d288810849302328b3d888af5791d365.jpg?1521803703","preview":"/system/screenshots/x332/0ac54d21d288810849302328b3d888af5791d365.jpg?1521803703"},{"original":"/system/screenshots/original/6b88af9f4e1e40de987f1acf694a3d7759a45636.jpg?1521803713","preview":"/system/screenshots/x332/6b88af9f4e1e40de987f1acf694a3d7759a45636.jpg?1521803713"},{"original":"/system/screenshots/original/f93183ae0835be3e0a88525004444d03e2f78e10.jpg?1521803722","preview":"/system/screenshots/x332/f93183ae0835be3e0a88525004444d03e2f78e10.jpg?1521803722"},{"original":"/system/screenshots/original/6e1c5ed312fda37a958a5135fe000fb21710bbf1.jpg?1521803731","preview":"/system/screenshots/x332/6e1c5ed312fda37a958a5135fe000fb21710bbf1.jpg?1521803731"},{"original":"/system/screenshots/original/7000835768d092a2204f4487fa52375dcd2fe5f9.jpg?1521803741","preview":"/system/screenshots/x332/7000835768d092a2204f4487fa52375dcd2fe5f9.jpg?1521803741"},{"original":"/system/screenshots/original/78bbfb1dd6533c60e48d5e96417aca97fe4a5e5a.jpg?1521803748","preview":"/system/screenshots/x332/78bbfb1dd6533c60e48d5e96417aca97fe4a5e5a.jpg?1521803748"},{"original":"/system/screenshots/original/81e68c1a9e374726bf41ceda5e9a8a399a0a7459.jpg?1521803755","preview":"/system/screenshots/x332/81e68c1a9e374726bf41ceda5e9a8a399a0a7459.jpg?1521803755"},{"original":"/system/screenshots/original/d7cc449ccc10dccdfcbe6b4a4d3aa448ba857697.jpg?1521803767","preview":"/system/screenshots/x332/d7cc449ccc10dccdfcbe6b4a4d3aa448ba857697.jpg?1521803767"},{"original":"/system/screenshots/original/243eda8efd03eb16cfe738ea92eb1ac084bcd572.jpg?1521803781","preview":"/system/screenshots/x332/243eda8efd03eb16cfe738ea92eb1ac084bcd572.jpg?1521803781"},{"original":"/system/screenshots/original/df7a3d7e3147e1d23fb56cbacdc49683f4a8d8c3.jpg?1521803790","preview":"/system/screenshots/x332/df7a3d7e3147e1d23fb56cbacdc49683f4a8d8c3.jpg?1521803790"},{"original":"/system/screenshots/original/4e389fbf43e7113f0bb78012de422bd9e0f4af72.jpg?1521803796","preview":"/system/screenshots/x332/4e389fbf43e7113f0bb78012de422bd9e0f4af72.jpg?1521803796"},{"original":"/system/screenshots/original/2892eac6205eebe2a6215657953dc46ca3d34a2b.jpg?1521803803","preview":"/system/screenshots/x332/2892eac6205eebe2a6215657953dc46ca3d34a2b.jpg?1521803803"},{"original":"/system/screenshots/original/8d1b89bb7896baf2b98b5c7cffecbe0cc75a8c5c.jpg?1521803809","preview":"/system/screenshots/x332/8d1b89bb7896baf2b98b5c7cffecbe0cc75a8c5c.jpg?1521803809"},{"original":"/system/screenshots/original/376d543f85ebbe2c5216c5c5ef130b287ceaf1f0.jpg?1521803813","preview":"/system/screenshots/x332/376d543f85ebbe2c5216c5c5ef130b287ceaf1f0.jpg?1521803813"},{"original":"/system/screenshots/original/00db35b05b7beb65f5f36b0ea5b01fb0597b9565.jpg?1521803818","preview":"/system/screenshots/x332/00db35b05b7beb65f5f36b0ea5b01fb0597b9565.jpg?1521803818"},{"original":"/system/screenshots/original/d2c9680a9a7a4a0a092c5b29a2445bbb7b4bc3f2.jpg?1521803822","preview":"/system/screenshots/x332/d2c9680a9a7a4a0a092c5b29a2445bbb7b4bc3f2.jpg?1521803822"},{"original":"/system/screenshots/original/d0ba6c8b1029e0f8129434c82c1d8d2bdea7d496.jpg?1521803827","preview":"/system/screenshots/x332/d0ba6c8b1029e0f8129434c82c1d8d2bdea7d496.jpg?1521803827"},{"original":"/system/screenshots/original/296ffa9daa104569ee2fc180bc9ff774ef3b3406.jpg?1521803838","preview":"/system/screenshots/x332/296ffa9daa104569ee2fc180bc9ff774ef3b3406.jpg?1521803838"},{"original":"/system/screenshots/original/ca17cec64b540c01487a13f74c909f8530caee11.jpg?1521803844","preview":"/system/screenshots/x332/ca17cec64b540c01487a13f74c909f8530caee11.jpg?1521803844"},{"original":"/system/screenshots/original/ac1275afe070e8f05d7b510077a330a5ad8e9691.jpg?1521803854","preview":"/system/screenshots/x332/ac1275afe070e8f05d7b510077a330a5ad8e9691.jpg?1521803854"},{"original":"/system/screenshots/original/2ad8b1d6c855055a9852277edb7a7d190f31afaf.jpg?1521803859","preview":"/system/screenshots/x332/2ad8b1d6c855055a9852277edb7a7d190f31afaf.jpg?1521803859"},{"original":"/system/screenshots/original/e6f90ca79607617efa82b3c06806ec6866c8a9f0.jpg?1521803879","preview":"/system/screenshots/x332/e6f90ca79607617efa82b3c06806ec6866c8a9f0.jpg?1521803879"},{"original":"/system/screenshots/original/2eb8a2abf66c028e05b9648795b87969eddaab45.jpg?1521803894","preview":"/system/screenshots/x332/2eb8a2abf66c028e05b9648795b87969eddaab45.jpg?1521803894"},{"original":"/system/screenshots/original/8eafb80c355ce373302a5b07cf67a38fa90fa8a4.jpg?1521803910","preview":"/system/screenshots/x332/8eafb80c355ce373302a5b07cf67a38fa90fa8a4.jpg?1521803910"},{"original":"/system/screenshots/original/490328125616b4608c77d00d2ad189555da96357.jpg?1521803923","preview":"/system/screenshots/x332/490328125616b4608c77d00d2ad189555da96357.jpg?1521803923"},{"original":"/system/screenshots/original/fd6b725c00a665d7ade67e48f9feb5e5a88a2962.jpg?1521803937","preview":"/system/screenshots/x332/fd6b725c00a665d7ade67e48f9feb5e5a88a2962.jpg?1521803937"},{"original":"/system/screenshots/original/63fad73ba1e0291ded493834a843adcb212fccf5.jpg?1521803947","preview":"/system/screenshots/x332/63fad73ba1e0291ded493834a843adcb212fccf5.jpg?1521803947"},{"original":"/system/screenshots/original/72ac9be99d7be27854590c7f4afb975c1d7a5ee5.jpg?1521803961","preview":"/system/screenshots/x332/72ac9be99d7be27854590c7f4afb975c1d7a5ee5.jpg?1521803961"},{"original":"/system/screenshots/original/281644ed340b7185c4827be43deeed897b7a9a1c.jpg?1521803976","preview":"/system/screenshots/x332/281644ed340b7185c4827be43deeed897b7a9a1c.jpg?1521803976"},{"original":"/system/screenshots/original/fb2a92520d154759a35953e90c2f8be9b3f63171.jpg?1521803986","preview":"/system/screenshots/x332/fb2a92520d154759a35953e90c2f8be9b3f63171.jpg?1521803986"},{"original":"/system/screenshots/original/3791b5eb8c688773ebc103031ad94e9bc48f453a.jpg?1521803996","preview":"/system/screenshots/x332/3791b5eb8c688773ebc103031ad94e9bc48f453a.jpg?1521803996"},{"original":"/system/screenshots/original/8533f0f56a66db4c656084069957745423881f37.jpg?1521804007","preview":"/system/screenshots/x332/8533f0f56a66db4c656084069957745423881f37.jpg?1521804007"}]'
+  recorded_at: Tue, 20 Feb 2024 21:29:45 GMT
+recorded_with: VCR 6.2.0

@@ -1,0 +1,40 @@
+module Shikimori
+  module API
+    class V1
+      module Topics
+        attr_reader rest: REST
+
+        TOPIC_TYPES_MAP: Hash[String, String]
+
+        type creation_topic = {
+          title: String,
+          body: String,
+          linked_id: Integer,
+          linked_type: 'Anime' | 'Manga' | 'Ranobe' | 'Character' | 'Person' | 'Club' | 'ClubPage' | 'Critique' | 'Review' | 'Contest' | 'CosplayGallery' | 'Collection' | 'Article',
+          type: 'Topic',
+          forum_id: Integer,
+          user_id: Integer
+        }
+
+        type updation_topic = {
+          title: String,
+          body: String,
+          linked_id: Integer,
+          linked_type: 'Anime' | 'Manga' | 'Ranobe' | 'Character' | 'Person' | 'Club' | 'ClubPage' | 'Critique' | 'Review' | 'Contest' | 'CosplayGallery' | 'Collection' | 'Article',
+        }
+
+        def topics: (?type: String | nil, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def topic: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def create_topic: (creation_topic, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def update_topic: (_ToS, updation_topic, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def delete_topic: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> bool
+        def topics_updates: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def hot_topics: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

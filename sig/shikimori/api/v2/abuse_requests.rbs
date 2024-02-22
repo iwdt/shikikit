@@ -1,0 +1,18 @@
+module Shikimori
+  module API
+    class V2
+      module AbuseRequests
+        attr_reader rest: REST
+
+        def abuse_offtopic_request: ({comment_id: Integer }, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def abuse_review_request: ({comment_id: Integer, topic_id: Integer }, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def abuse_request: ({comment_id: Integer, topic_id: Integer, reason: String}, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def abuse_spoiler_request: ({comment_id: Integer, topic_id: Integer, reason: String}, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

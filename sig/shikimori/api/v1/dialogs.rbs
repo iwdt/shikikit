@@ -1,0 +1,17 @@
+module Shikimori
+  module API
+    class V1
+      module Dialogs
+        attr_reader rest: REST
+
+        def dialogs: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def dialog: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def delete_dialog: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> bool
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

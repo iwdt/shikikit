@@ -1,0 +1,23 @@
+module Shikimori
+  module API
+    class V1
+      module Favorites
+        attr_reader rest: REST
+
+        type favoritable_type = 'person' | 'anime' | 'manga' | 'ranobe' | 'character'
+        type person_type = 'common' | 'seyu' | 'mangaka' | 'producer' | 'person'
+
+        def create_favorite: (_ToS, type: favoritable_type, ?person_type: person_type, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def delete_favorite: (_ToS, type: favoritable_type, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def reorder_favorite: (_ToS, position: Integer, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+
+        private
+
+        def creation_favorite_path_by: (String, String, ?String person_type) -> Array[String]
+        def deletion_favorite_path_by: (String, String) -> Array[String]
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

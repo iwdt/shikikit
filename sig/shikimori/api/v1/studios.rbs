@@ -1,0 +1,15 @@
+module Shikimori
+  module API
+    class V1
+      module Studios
+        attr_reader rest: REST
+
+        def studios: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

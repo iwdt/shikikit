@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fakemori.example/api/mangas/1/external_links
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      User-Agent:
+      - "<APP_NAME>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Host:
+      - fakemori.example
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Feb 2024 18:44:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.009250'
+      Vary:
+      - Accept, Origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjE1OTg1NjIsImtpbmQiOiJ3aWtpcGVkaWEiLCJ1cmwiOiJodHRwczovL3J1Lndpa2lwZWRpYS5vcmcvd2lraS9Nb25zdGVyXyjQvNCw0L3Qs9CwKSIsInNvdXJjZSI6InNoaWtpbW9yaSIsImVudHJ5X2lkIjoxLCJlbnRyeV90eXBlIjoiTWFuZ2EiLCJjcmVhdGVkX2F0IjoiMjAyMS0wNS0yN1QxOTozOTozNC43NDErMDM6MDAiLCJ1cGRhdGVkX2F0IjoiMjAyMS0wNS0yN1QxOTozOTozNC43NDErMDM6MDAiLCJpbXBvcnRlZF9hdCI6bnVsbH0seyJpZCI6MTU5ODU2Mywia2luZCI6Indpa2lwZWRpYSIsInVybCI6Imh0dHBzOi8vamEud2lraXBlZGlhLm9yZy93aWtpL01PTlNURVIiLCJzb3VyY2UiOiJzaGlraW1vcmkiLCJlbnRyeV9pZCI6MSwiZW50cnlfdHlwZSI6Ik1hbmdhIiwiY3JlYXRlZF9hdCI6IjIwMjEtMDUtMjdUMTk6Mzk6MzQuNzQxKzAzOjAwIiwidXBkYXRlZF9hdCI6IjIwMjEtMDUtMjdUMTk6Mzk6MzQuNzQxKzAzOjAwIiwiaW1wb3J0ZWRfYXQiOm51bGx9LHsiaWQiOjE1OTg1NjQsImtpbmQiOiJ3aWtpcGVkaWEiLCJ1cmwiOiJodHRwczovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9Nb25zdGVyXyhtYW5nYSkiLCJzb3VyY2UiOiJzaGlraW1vcmkiLCJlbnRyeV9pZCI6MSwiZW50cnlfdHlwZSI6Ik1hbmdhIiwiY3JlYXRlZF9hdCI6IjIwMjEtMDUtMjdUMTk6Mzk6MzQuNzQxKzAzOjAwIiwidXBkYXRlZF9hdCI6IjIwMjEtMDUtMjdUMTk6Mzk6MzQuNzQxKzAzOjAwIiwiaW1wb3J0ZWRfYXQiOm51bGx9LHsiaWQiOjE1OTg1NjUsImtpbmQiOiJhbmltZV9uZXdzX25ldHdvcmsiLCJ1cmwiOiJodHRwczovL3d3dy5hbmltZW5ld3NuZXR3b3JrLmNvbS9lbmN5Y2xvcGVkaWEvbWFuZ2EucGhwP2lkPTE1MTEiLCJzb3VyY2UiOiJzaGlraW1vcmkiLCJlbnRyeV9pZCI6MSwiZW50cnlfdHlwZSI6Ik1hbmdhIiwiY3JlYXRlZF9hdCI6IjIwMjEtMDUtMjdUMTk6Mzk6MzQuNzQxKzAzOjAwIiwidXBkYXRlZF9hdCI6IjIwMjEtMDUtMjdUMTk6Mzk6MzQuNzQxKzAzOjAwIiwiaW1wb3J0ZWRfYXQiOm51bGx9LHsiaWQiOm51bGwsImtpbmQiOiJteWFuaW1lbGlzdCIsInVybCI6Imh0dHA6Ly9teWFuaW1lbGlzdC5uZXQvbWFuZ2EvMSIsInNvdXJjZSI6Im15YW5pbWVsaXN0IiwiZW50cnlfaWQiOjEsImVudHJ5X3R5cGUiOiJNYW5nYSIsImNyZWF0ZWRfYXQiOm51bGwsInVwZGF0ZWRfYXQiOm51bGwsImltcG9ydGVkX2F0IjpudWxsfSx7ImlkIjoxNTk4NTY2LCJraW5kIjoibWFuZ2F1cGRhdGVzIiwidXJsIjoiaHR0cHM6Ly93d3cubWFuZ2F1cGRhdGVzLmNvbS9zZXJpZXMuaHRtbD9pZD0xMjciLCJzb3VyY2UiOiJzaGlraW1vcmkiLCJlbnRyeV9pZCI6MSwiZW50cnlfdHlwZSI6Ik1hbmdhIiwiY3JlYXRlZF9hdCI6IjIwMTgtMDMtMDlUMDU6MDI6NDAuOTMwKzAzOjAwIiwidXBkYXRlZF9hdCI6IjIwMjAtMDItMDlUMTI6MTk6MTkuMzE5KzAzOjAwIiwiaW1wb3J0ZWRfYXQiOm51bGx9XQ==
+  recorded_at: Wed, 21 Feb 2024 18:44:14 GMT
+recorded_with: VCR 6.2.0

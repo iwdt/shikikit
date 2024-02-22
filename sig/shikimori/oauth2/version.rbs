@@ -1,0 +1,5 @@
+module Shikimori
+  module OAuth2
+    VERSION: String
+  end
+end

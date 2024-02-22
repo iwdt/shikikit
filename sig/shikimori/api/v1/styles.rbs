@@ -1,0 +1,18 @@
+module Shikimori
+  module API
+    class V1
+      module Styles
+        attr_reader rest: REST
+
+        def style: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def create_style: ({ css: String, name: String, owner_id: Integer, owner_type: 'User' | 'Club' }, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def update_style: (_ToS, { css: String, name: String }, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def preview_style: ({ css: String }, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

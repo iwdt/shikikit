@@ -1,0 +1,25 @@
+module Shikimori
+  module API
+    class V2
+      module EpisodeNotifications
+        attr_reader rest: REST
+
+        type notification_creation = {
+          anime_id: Integer,
+          episode: Integer,
+          aired_at: String | DateTime,
+          is_fandub: 'true' | 'false' | 1 | 0,
+          is_raw: 'true' | 'false' | 1 | 0,
+          is_subtitles: 'true' | 'false' | 1 | 0,
+          is_anime365: 'true' | 'false' | 1 | 0,
+        }
+
+        def create_episode_notification: (notification_creation, token: String, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end

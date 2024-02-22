@@ -1,0 +1,5 @@
+module Shikimori
+  module API
+    VERSION: String
+  end
+end

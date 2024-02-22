@@ -1,0 +1,19 @@
+module Shikimori
+  module API
+    class V1
+      module Comments
+        attr_reader rest: REST
+
+        def comments: (?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def comment: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def create_comment: (Hash[_ToS, Object], ?broadcast: ('false' | 'true' | 1 | 0 | nil), ?frontend: ('false' | 'true' | 1 | 0 | nil), ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def update_comment: (_ToS, Hash[_ToS, untyped], ?headers: Hash[String, String] | nil, **untyped) -> untyped
+        def delete_comment: (_ToS, ?headers: Hash[String, String] | nil, **untyped) -> bool
+
+        private
+
+        def base_url: -> ::Shikimori::API::URI
+      end
+    end
+  end
+end
