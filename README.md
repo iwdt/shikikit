@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/iwdt/shikikit/graph/badge.svg)](https://codecov.io/gh/iwdt/shikikit)
+[![CI](https://github.com/iwdt/shikikit/actions/workflows/main.yml/badge.svg)](https://github.com/iwdt/shikikit/actions/workflows/main.yml) [![codecov](https://codecov.io/gh/iwdt/shikikit/graph/badge.svg)](https://codecov.io/gh/iwdt/shikikit)
 
 # Shikikit
 Ruby toolkit for the [Shikimori API](https://shikimori.one)
