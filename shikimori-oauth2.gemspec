@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = 'Simple wrapper for the Shikimori OAuth2'
   spec.description = 'Ruby toolkit for working with the Shikimori OAuth2'
-  spec.homepage = 'https://github.com/iwdt/shikimori'
+  spec.homepage = 'https://github.com/iwdt/shikikit'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.0'
 
