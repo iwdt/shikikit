@@ -12,7 +12,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     abbrev (0.1.2)
-    activesupport (7.1.3)
+    activesupport (7.1.3.2)
       base64
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
@@ -35,7 +35,7 @@ GEM
     csv (3.2.8)
     diff-lcs (1.5.1)
     docile (1.4.0)
-    dotenv (3.0.1)
+    dotenv (3.0.2)
     drb (2.2.0)
       ruby2_keywords
     faraday (2.9.0)
@@ -49,7 +49,8 @@ GEM
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     json (2.7.1)
-    jwt (2.7.1)
+    jwt (2.8.0)
+      base64
     language_server-protocol (3.17.0.3)
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -80,7 +81,7 @@ GEM
       racc
     public_suffix (5.0.4)
     racc (1.7.3)
-    rack (3.0.9)
+    rack (3.0.9.1)
     rack-protection (4.0.0)
       base64 (>= 0.1.0)
       rack (>= 3.0.0, < 4)
@@ -167,7 +168,7 @@ GEM
     strscan (3.1.0)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
-    typeprof (0.21.10)
+    typeprof (0.21.11)
       rbs (>= 1.8.1)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
@@ -175,7 +176,7 @@ GEM
     uri (0.13.0)
     vcr (6.2.0)
     version_gem (1.1.3)
-    webmock (3.20.0)
+    webmock (3.22.0)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -204,4 +205,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   2.2.33
+   2.5.6
