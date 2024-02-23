@@ -33,8 +33,6 @@ TODO
 
 TODO
 
-### Usage Examples
-
 ## Shikimori OAuth 2
 
 A Ruby wrapper for the [Shikimori's OAuth 2](https://shikimori.one/oauth)
