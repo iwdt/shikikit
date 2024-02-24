@@ -15,7 +15,6 @@ Ruby toolkit for the [Shikimori](https://shikimori.one)
    3. [Usage](#usage)
 4. [API Client](#shikimori-api)
    1. [Installation](#installation-2)
-   2. [Configuration](#configuration-2)
    3. [Usage](#usage-1)
 5. [Supported Ruby Versions](#supported-ruby-versions)
 6. [Versioning](#versioning)
@@ -65,7 +64,7 @@ You can configure several options, which you pass in to the `provider` method vi
    - `friends` - add and remove people as friends.
    - `ignores` - add and remove people to ignore.
 
-* `client_options`: optional `Hash` of client options. Aviable options:
+* `client_options`: optional `Hash` of client options. Available options:
    - `site` - the OAuth2 provider site host. Default: `https://shikimori.one`
    - `redirect_uri` - the absolute URI to the Redirection Endpoint for use in authorization grants and token exchange.
    - `authorize_url` - absolute or relative URL path to the Authorization endpoint. Default: `/oauth/authorize`
@@ -173,7 +172,7 @@ Shikimori::Oauth2.configure do |c|
 end
 ```
 
-Also aviable global options from [OAuth2 gem](https://gitlab.com/oauth-xx/oauth2#global-configuration).
+Also available global options from [OAuth2 gem](https://gitlab.com/oauth-xx/oauth2#global-configuration).
 
 ### Usage
 
@@ -221,13 +220,44 @@ Access the library in Ruby:
 require 'shikimori-api'
 ```
 
-### Configuration
-
-TODO
-
 ### Usage
 
-TODO
+API methods are accessible as instance methods of the `Shikimori::API::Client`. Documentation is available at RubyDoc.info:
+* [V1 methods](https://www.rubydoc.info/gems/shikimori-api/Shikimori/API/V1)
+* [V2 methods](https://www.rubydoc.info/gems/shikimori-api/Shikimori/API/V2)
+
+### Examples
+
+Basic example to get 10 random anime titles released in the 90s
+
+```ruby
+client = Shikimori::API::Client.new
+client.v1.animes(limit: 10, order: 'random', season: '199x') # call /api/animes
+```
+
+To provide authentication credentials, you can pass them as arguments during client initialization:
+
+```ruby
+access_token = 'access_token' #=> User's access token
+refresh_token = 'refresh_token' #=> User's refresh token
+oauth_app_name = 'Api Test' #=> OAuth2 application name
+
+client = Shikimori::API::Client.new(app_name: oauth_app_name, access_token: access_token, refresh_token: refresh_token)
+client.v1.whoami
+```
+
+For passing additional query parameters to request use the following syntax:
+
+```ruby
+client.v1.animes(limit: 10, page: 2, another_param: 'Param')
+client.v1.anime_videos(anime_id, first_param: 1, second_param: 2)
+```
+
+... and for request headers use the following syntax:
+
+```ruby
+client.v1.animes(headers: { 'X-Header-Name' => 'My header value' })
+```
 
 ## Supported Ruby Versions
 This library aims to support and is tested against the following Ruby implementations:
