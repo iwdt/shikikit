@@ -15,13 +15,13 @@ To use Shikikit DevContainers, follow these steps:
 1. Prerequisites:
    * [Docker](https://docs.docker.com/get-docker/)
    * [Visual Studio Code](https://code.visualstudio.com/)
-1. Clone the TaskHub Repository:
+1. Clone the Shikikit Repository:
    ```shell
    git clone https://github.com/iwdt/shikikit.git
    ```
 1. Open the Project in Visual Studio Code:
    * Open Visual Studio Code.
-   * Navigate to File > Open Folder and select the TaskHub project folder.
+   * Navigate to File > Open Folder and select the Shikikit project folder.
 1. Install the [Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers):
    * In Visual Studio Code, go to the Extensions view by clicking the Extensions icon in the sidebar.
    * Search for "Dev Containers" and install the extension provided by Microsoft.
@@ -33,7 +33,7 @@ To use Shikikit DevContainers, follow these steps:
    * You are now inside a DevContainer with all the necessary tools and dependencies pre-installed.
    * You can edit code, run tasks, and work on the project just like you would in a local development environment.
 
-That's it! You're now set up to work with TaskHub using DevContainers, ensuring a consistent development environment across your team. Happy coding!
+That's it! You're now set up to work with Shikikit using DevContainers, ensuring a consistent development environment across your team. Happy coding!
 
 ## Additional Links
 
