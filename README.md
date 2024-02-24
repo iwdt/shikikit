@@ -1,7 +1,8 @@
 # Shikikit
 Ruby toolkit for the [Shikimori](https://shikimori.one)
 
-[![CI](https://github.com/iwdt/shikikit/actions/workflows/main.yml/badge.svg)](https://github.com/iwdt/shikikit/actions/workflows/main.yml) [![codecov](https://codecov.io/gh/iwdt/shikikit/graph/badge.svg)](https://codecov.io/gh/iwdt/shikikit)
+[![Shikimori Profile](https://img.shields.io/badge/shikimori_profile-gray?logo=shikimori)](https://shikimori.one/io.human) [![Codecov](https://img.shields.io/codecov/c/gh/iwdt/shikikit?logo=codecov)](https://codecov.io/gh/iwdt/shikikit) [![CI](https://img.shields.io/github/actions/workflow/status/iwdt/shikikit/main.yml?label=CI&logo=github)](https://github.com/iwdt/shikikit/actions/workflows/main.yml) [![GitHub Discussions](https://img.shields.io/github/discussions/iwdt/shikikit?logo=github)](https://github.com/iwdt/shikikit/discussions)
+
 
 ## Table of Contents
 1. [API Documentation](#api-documentation)
@@ -34,7 +35,7 @@ Strategy to authenticate with Shikimori via OAuth2 in OmniAuth. To use it, you'l
 
 Shikimori's official guide to using OAuth2: https://shikimori.one/oauth
 
-[![Gem Version](https://badge.fury.io/rb/omniauth-shikimori-oauth2.svg)](https://rubygems.org/gems/omniauth-shikimori-oauth2)
+[![Gem Version](https://img.shields.io/gem/v/omniauth-shikimori-oauth2?logo=rubygems&label=RubyGems)](https://rubygems.org/gems/omniauth-shikimori-oauth2)
 
 ### Installation
 
@@ -123,7 +124,7 @@ end
 
 A Ruby wrapper for the [Shikimori's OAuth 2](https://shikimori.one/oauth)
 
-[![Gem Version](https://badge.fury.io/rb/shikimori-oauth2.svg)](https://rubygems.org/gems/shikimori-oauth2)
+[![Gem Version](https://img.shields.io/gem/v/shikimori-oauth2?logo=rubygems&label=RubyGems)](https://rubygems.org/gems/shikimori-oauth2)
 
 
 ### Installation
@@ -198,7 +199,7 @@ access.expires_at #=> 1708887613
 
 Simple wrapper for the Shikimori API
 
-[![Gem Version](https://badge.fury.io/rb/shikimori-api.svg)](https://rubygems.org/gems/shikimori-api)
+[![Gem Version](https://img.shields.io/gem/v/shikimori-api?logo=rubygems&label=RubyGems)](https://rubygems.org/gems/shikimori-api)
 
 ### Installation
 
