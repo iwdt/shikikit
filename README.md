@@ -8,15 +8,15 @@ Ruby toolkit for the [Shikimori](https://shikimori.one)
 2. [Omniauth Strategy](#omniauth-shikimori-strategy)
    1. [Installation](#installation)
    2. [Configuration](#configuration)
-   3. [Usage](#usage)
+   3. [Usage](#usage-examples)
 3. [OAuth2](#shikimori-oauth-2)
    1. [Installation](#installation-1)
    2. [Configuration](#configuration-1)
-   3. [Usage](#usage-1)
+   3. [Usage](#usage)
 4. [API Client](#shikimori-api)
    1. [Installation](#installation-2)
    2. [Configuration](#configuration-2)
-   3. [Usage](#usage-2)
+   3. [Usage](#usage-1)
 5. [Supported Ruby Versions](#supported-ruby-versions)
 6. [Versioning](#versioning)
 7. [Contributing](/CONTRIBUTING.md)
@@ -31,7 +31,9 @@ Ruby toolkit for the [Shikimori](https://shikimori.one)
 
 ## Omniauth Shikimori Strategy
 
-Strategy to authenticate with Shikimori via OAuth2 in OmniAuth
+Strategy to authenticate with Shikimori via OAuth2 in OmniAuth. To use it, you'll need to sign up for an OAuth2 Application ID and Secret on the [Shikimori OAuth Apps Page](https://shikimori.one/oauth/applications).
+
+Shikimori's official guide to using OAuth2: https://shikimori.one/oauth
 
 [![Gem Version](https://badge.fury.io/rb/omniauth-shikimori-oauth2.svg)](https://rubygems.org/gems/omniauth-shikimori-oauth2)
 
@@ -47,11 +49,69 @@ Then `bundle install`
 
 ### Configuration
 
-TODO
+You can configure several options, which you pass in to the `provider` method via a `Hash`:
 
-### Usage
+* `app_name`: the name of the registered OAuth application at https://shikimori.one/oauth/applications
+   > **⚠ WARNING!**
+   > This is an important option that must be specified, as otherwise your IP may be banned for further requests to Shikimori.
 
-TODO
+* `scope`: required list of access permissions you want to request from the user. Available values:
+   - `user_rates` - modify your list of anime and manga.
+   - `messages` - read your personal messages, send personal messages on your behalf.
+   - `comments` - comment on behalf of you.
+   - `topics` - create topics and reviews on your behalf.
+   - `content` - modify the website's database.
+   - `clubs` - join and leave clubs.
+   - `friends` - add and remove people as friends.
+   - `ignores` - add and remove people to ignore.
+
+* `client_options`: optional `Hash` of client options. Aviable options:
+   - `site` - the OAuth2 provider site host. Default: `https://shikimori.one`
+   - `redirect_uri` - the absolute URI to the Redirection Endpoint for use in authorization grants and token exchange.
+   - `authorize_url` - absolute or relative URL path to the Authorization endpoint. Default: `/oauth/authorize`
+   - `token_url` - absolute or relative URL path to the Token endpoint. Default: `/oauth/token`
+   - `token_method` - HTTP method to use to request token (`:get`, `:post`, `:post_with_query_string`). Default: `:post`
+   - `auth_scheme` - HTTP method to use to authorize request (`:basic_auth` or `:request_body`). Default: `basic_auth`
+   - `connection_opts` - `Hash` of connection options to pass to initialize `Faraday` with. Default: `{}`
+   - `max_redirects` - maximum number of redirects to follow. Default: `5`
+   - `raise_errors` - whether or not to raise an `OAuth2::Error` on responses with 400+ status codes. Default: `true`
+   - `logger` - which logger to use when `OAUTH_DEBUG` is enabled. Default: `::Logger.new($stdout)`
+
+Here's an example of a possible configuration:
+
+```ruby
+provider :shikimori, ENV['SHIKIMORI_KEY'], ENV['SHIKIMORI_KEY'],
+         scope: %w[user_rates messages comments topics content clubs friends ignores],
+         app_name: 'My awesome site',
+         client_options: {
+            site: 'https://shikimori.org',
+            redirect_url: 'https://my-awesome-site.example/auth/shikimori/callback',
+            logger: Rails.logger
+         }
+```
+
+### Usage examples
+#### Rails usage
+In `config/initializers/omniauth.rb`
+
+```ruby
+Rails.application.config.middleware.use OmniAuth::Builder do
+   provider :shikimori, ENV['SHIKIMORI_KEY'], ENV['SHIKIMORI_KEY'],
+            scope: %w[user_rates comments topics],
+            app_name: ENV['SHIKIMORI_APP_NAME']
+end
+```
+
+#### Non-rails usage
+Add middleware to your rack-based application:
+
+```ruby
+use OmniAuth::Builder do
+   provider :shikimori, ENV['SHIKIMORI_KEY'], ENV['SHIKIMORI_SECRET'],
+            scope: %w[user_rates comments topics],
+            app_name: ENV['SHIKIMORI_APP_NAME']
+end
+```
 
 ## Shikimori OAuth 2
 
