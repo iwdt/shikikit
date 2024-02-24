@@ -4,7 +4,7 @@ module Shikimori
   module API
     # Helpers to make requests
     class REST
-      def initialize(app_name:, access_token:, refresh_token:)
+      def initialize(app_name: nil, access_token: nil, refresh_token: nil)
         @app_name = app_name
         @access_token = access_token
         @refresh_token = refresh_token
@@ -100,7 +100,7 @@ module Shikimori
           'Content-Type' => 'application/json',
           'Authorization' => "Bearer #{@access_token}",
           'User-Agent' => @app_name
-        )
+        ).compact
       end
 
       def query_params_from(uri, options)

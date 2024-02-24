@@ -5,11 +5,11 @@ module Shikimori
       type request = Net::HTTP::Delete | Net::HTTP::Get | Net::HTTP::Post | Net::HTTP::Put
       type body = Hash[_ToS, Object] | nil
 
-      @app_name: String
-      @access_token: String
-      @refresh_token: String
+      @app_name: String | nil
+      @access_token: String | nil
+      @refresh_token: String | nil
 
-      def initialize: (app_name: String, access_token: String, refresh_token: String) -> void
+      def initialize: (?app_name: String | nil, ?access_token: String | nil, ?refresh_token: String | nil) -> void
 
       def get: (::URI::Generic, **untyped) -> untyped
       def post: (::URI::Generic, Hash[_ToS, untyped] data, **untyped) -> untyped

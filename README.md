@@ -71,7 +71,7 @@ You can configure several options, which you pass in to the `provider` method vi
    - `authorize_url` - absolute or relative URL path to the Authorization endpoint. Default: `/oauth/authorize`
    - `token_url` - absolute or relative URL path to the Token endpoint. Default: `/oauth/token`
    - `token_method` - HTTP method to use to request token (`:get`, `:post`, `:post_with_query_string`). Default: `:post`
-   - `auth_scheme` - HTTP method to use to authorize request (`:basic_auth` or `:request_body`). Default: `basic_auth`
+   - `auth_scheme` - HTTP method to use to authorize request (`:basic_auth` or `:request_body`). Default: `:basic_auth`
    - `connection_opts` - `Hash` of connection options to pass to initialize `Faraday` with. Default: `{}`
    - `max_redirects` - maximum number of redirects to follow. Default: `5`
    - `raise_errors` - whether or not to raise an `OAuth2::Error` on responses with 400+ status codes. Default: `true`
@@ -98,7 +98,11 @@ In `config/initializers/omniauth.rb`
 Rails.application.config.middleware.use OmniAuth::Builder do
    provider :shikimori, ENV['SHIKIMORI_KEY'], ENV['SHIKIMORI_KEY'],
             scope: %w[user_rates comments topics],
-            app_name: ENV['SHIKIMORI_APP_NAME']
+            app_name: ENV['SHIKIMORI_APP_NAME'],
+            client_options: {
+               redirect_url: 'https://my-awesome-site.example/auth/shikimori/callback',
+               logger: Rails.logger
+            }
 end
 ```
 
@@ -109,7 +113,10 @@ Add middleware to your rack-based application:
 use OmniAuth::Builder do
    provider :shikimori, ENV['SHIKIMORI_KEY'], ENV['SHIKIMORI_SECRET'],
             scope: %w[user_rates comments topics],
-            app_name: ENV['SHIKIMORI_APP_NAME']
+            app_name: ENV['SHIKIMORI_APP_NAME'],
+            client_options: {
+               redirect_url: 'https://my-awesome-site.example/auth/shikimori/callback'
+            }
 end
 ```
 
@@ -142,11 +149,51 @@ require 'shikimori-oauth2'
 
 ### Configuration
 
-TODO
+While `Shikimori::OAuth2::Client` accepts a range of options when creating a new client instance, Shikimori's configuration API allows you to set your configuration options at the module level. This is particularly handy if you're creating a number of client instances based on some shared defaults. Changing options affects new instances only and will not modify existing `Shikimori::OAuth2::Client` instances created with previous options.
+
+Configuring module defaults
+
+Every writable attribute in `Shikimori::OAuth2::Config` can be set in batch:
+
+```ruby
+Shikimori::Oauth2.configure do |c|
+  c.site = 'https://shikimori.one/'
+  c.app_name = 'My awesome site'
+  c.options = {
+   redirect_uri: 'https://my-awesome-site.example/auth/shikimori/callback',
+   authorize_url: '/oauth/authorize',
+   token_url: '/oauth/token',
+   token_method: :post,
+   auth_scheme: :basic_auth,
+   connection_opts: {},
+   max_redirects: 5,
+   raise_errors: true,
+   logger: ::Logger.new($stdout),
+  }
+end
+```
+
+Also aviable global options from [OAuth2 gem](https://gitlab.com/oauth-xx/oauth2#global-configuration).
 
 ### Usage
 
-TODO
+To get access and refresh tokens, follow this example:
+
+```ruby
+require 'shikimori-oauth2'
+
+client = Shikimori::OAuth2::Client.new('client_id', 'client_secret', app_name: 'Api test')
+client.auth_code.authorize_url(scope: 'user_rates+comments+topics', redirect_uri: 'urn:ietf:wg:oauth:2.0:oob')
+#=> https://shikimori.one/oauth/authorize?client_id=client_id&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&response_type=code&scope=user_rates+comments+topics
+#=> Open this link at browser and copy code
+
+access = client.auth_code.get_token('authorization_code_value', redirect_uri: 'urn:ietf:wg:oauth:2.0:oob')
+
+access.token #=> Access token
+access.refresh_token #=> Refresh token
+access.expires_in #=> 86400
+access.expires_at #=> 1708887613
+```
 
 ## Shikimori API
 

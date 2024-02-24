@@ -6,7 +6,7 @@ module Shikimori
       attr_reader v1: V1
       attr_reader v2: V2
 
-      def initialize: (?String site, app_name: String, access_token: String, refresh_token: String) -> void
+      def initialize: (?String site, ?app_name: String | nil, ?access_token: String | nil, ?refresh_token: String | nil) -> void
     end
   end
 end

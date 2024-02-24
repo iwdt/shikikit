@@ -14,7 +14,7 @@ module Shikimori
 
       attr_reader :v1, :v2
 
-      def initialize(site = DEFAULT_SITE_URL, app_name:, access_token:, refresh_token:)
+      def initialize(site = DEFAULT_SITE_URL, app_name: nil, access_token: nil, refresh_token: nil)
         rest = REST.new(
           access_token: access_token,
           refresh_token: refresh_token,
