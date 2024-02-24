@@ -7,6 +7,8 @@ module Shikimori
       attr_reader v2: V2
 
       def initialize: (?String site, **untyped) -> void
+
+      def self.as_app: (?String site, **untyped) { (Shikimori::API::Client) -> void } -> Shikimori::API::Client
     end
   end
 end

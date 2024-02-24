@@ -266,6 +266,16 @@ For configuring a connection through proxy, you can pass `proxy_host`, `proxy_po
 client = Shikimori::API::Client.new(proxy_host: 'http://my-proxy', proxy_port: 8080, proxy_user: 'my_proxy_user', proxy_password: 'my_proxy_password')
 ```
 
+You can also using client as application:
+
+```ruby
+Shikimori::API::Client.as_app(access_token: 'access-token') do |client|
+   animes = client.animes
+   mangas = client.mangas
+   # some logic ...
+end
+```
+
 ## Supported Ruby Versions
 This library aims to support and is tested against the following Ruby implementations:
 * Ruby 3.0

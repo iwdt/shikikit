@@ -32,6 +32,25 @@ module Shikimori
         @v1 = V1.new(base_url: base_uri.join('api/'), rest: rest)
         @v2 = V2.new(base_url: base_uri.join('api/v2/'), rest: rest)
       end
+
+      # Using shikimori client as application
+      #
+      # @yield [Client] client instance
+      # @example Usage example
+      #   Shikimori::API::Client.as_app(access_token: 'my-access-token') do |client|
+      #     animes = client.v1.animes
+      #     mangas = client.v1.mangas
+      #     # some logic ...
+      #   end
+      #
+      # @see #initialize
+      def self.as_app(site = DEFAULT_SITE_URL, **options)
+        client = new(site, **options)
+
+        yield client
+
+        client
+      end
     end
   end
 end
