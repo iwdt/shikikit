@@ -16,7 +16,7 @@ module Shikimori
         #
         # @return [Array<Hash>] Array of hashes representing people
         #
-        # @see https://shikimori.one/api/doc/1.0/people/index Shikimori's API documentation
+        # @see https://shikimori.one/api/doc/1.0/people/search Shikimori's API documentation
         # @example Search a Hayao Miyazaki at mangakas list
         #   client = Shikimori::API::Client.new(
         #     app_name: 'Api Test',
