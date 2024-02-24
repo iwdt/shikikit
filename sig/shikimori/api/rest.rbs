@@ -8,8 +8,12 @@ module Shikimori
       @app_name: String | nil
       @access_token: String | nil
       @refresh_token: String | nil
+      @proxy_host: String | :ENV | nil
+      @proxy_port: Integer | nil
+      @proxy_user: String | nil
+      @proxy_password: String | nil
 
-      def initialize: (?app_name: String | nil, ?access_token: String | nil, ?refresh_token: String | nil) -> void
+      def initialize: (?app_name: String | nil, ?access_token: String | nil, ?refresh_token: String | nil, **untyped) -> void
 
       def get: (::URI::Generic, **untyped) -> untyped
       def post: (::URI::Generic, Hash[_ToS, untyped] data, **untyped) -> untyped

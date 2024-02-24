@@ -4,10 +4,14 @@ module Shikimori
   module API
     # Helpers to make requests
     class REST
-      def initialize(app_name: nil, access_token: nil, refresh_token: nil)
+      def initialize(app_name: nil, access_token: nil, refresh_token: nil, **options)
         @app_name = app_name
         @access_token = access_token
         @refresh_token = refresh_token
+        @proxy_host = options.fetch(:proxy_host, nil)
+        @proxy_port = options.fetch(:proxy_port, nil)
+        @proxy_user = options.fetch(:proxy_user, nil)
+        @proxy_password = options.fetch(:proxy_password, nil)
       end
 
       def get(uri, **options)
@@ -67,7 +71,7 @@ module Shikimori
 
         Net::HTTP.start(
           uri.hostname.to_s, uri.port,
-          :ENV, nil, nil, nil,
+          @proxy_host, @proxy_port, @proxy_user, @proxy_password,
           use_ssl: uri.scheme == 'https'
         ) do |http|
           http.request(request)

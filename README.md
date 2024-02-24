@@ -260,6 +260,12 @@ client.v1.anime_videos(anime_id, first_param: 1, second_param: 2)
 client.v1.animes(headers: { 'X-Header-Name' => 'My header value' })
 ```
 
+For configuring a connection through proxy, you can pass `proxy_host`, `proxy_port`, `proxy_user` and `proxy_password` as arguments during client initialization:
+
+```ruby
+client = Shikimori::API::Client.new(proxy_host: 'http://my-proxy', proxy_port: 8080, proxy_user: 'my_proxy_user', proxy_password: 'my_proxy_password')
+```
+
 ## Supported Ruby Versions
 This library aims to support and is tested against the following Ruby implementations:
 * Ruby 3.0
