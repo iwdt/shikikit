@@ -3,6 +3,6 @@
 module OmniAuth
   module Shikimori
     # @return [String] Semantic version of library
-    VERSION = '1.0.0'
+    VERSION = '1.0.1'
   end
 end
