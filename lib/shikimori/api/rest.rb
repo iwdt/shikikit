@@ -80,8 +80,6 @@ module Shikimori
 
       def parse_response(response)
         case response
-        when Net::HTTPNoContent
-          {}
         when Net::HTTPSuccess, Net::HTTPCreated
           json_parse_response_body(response.body)
         when Net::HTTPForbidden
@@ -89,12 +87,22 @@ module Shikimori
         when Net::HTTPNotFound
           raise NotFoundError
         when Net::HTTPUnprocessableEntity, Net::HTTPBadRequest
-          raise BadRequestError, json_parse_response_body(response.body)
+          raise BadRequestError, json_parse_response_errors(response.body)
+        end
+      end
+
+      def json_parse_response_errors(body)
+        error = json_parse_response_body(body)
+
+        if error.is_a?(Array)
+          error.join(', ')
+        elsif error.is_a?(Hash) && error.key?('errors')
+          error['errors']
         end
       end
 
       def json_parse_response_body(body)
-        JSON.parse(body&.empty? ? '{}' : body)
+        JSON.parse(body.nil? || body.empty? ? '{}' : body)
       rescue JSON::ParserError
         {}
       end

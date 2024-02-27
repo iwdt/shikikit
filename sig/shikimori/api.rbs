@@ -10,9 +10,6 @@ module Shikimori
     end
 
     class BadRequestError < RequestError
-      attr_reader errors: Array[String]
-
-      def initialize: (Array[String] | { "errors" => Array[String] }) -> void
     end
   end
 end

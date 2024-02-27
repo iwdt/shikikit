@@ -1,0 +1,21 @@
+includes:
+- lib
+requires:
+- shikimori-api
+- shikimori-oauth2
+- omniauth-shikimori-oauth2
+
+matcher:
+  subjects:
+  - Shikimori::API*
+  - Shikimori::OAuth2*
+  - Omniauth::Strategies::Shikimori
+  - Omniauth::Shikimori*
+integration:
+  name: rspec
+  arguments:
+  - --fail-fast
+  - --seed
+  - '0'
+  - spec
+fail_fast: true

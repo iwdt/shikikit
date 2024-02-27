@@ -22,7 +22,7 @@ RSpec.describe Shikimori::API::V1::Achievements, :vcr do
       it {
         expect { request }.to raise_error(
           Shikimori::API::BadRequestError,
-          /Bad request. Errors:/
+          "Invalid parameter 'user_id' value \"$bad_format\": Must be a number."
         )
       }
     end

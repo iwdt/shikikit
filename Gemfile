@@ -18,6 +18,9 @@ group :development, :test do
 
   gem 'steep', require: false
   gem 'typeprof', require: false
+
+  gem 'mutant-license', source: 'https://oss:gOVCrJ1XYGYW9WKqeEAXZojdLPBu4oNM@gem.mutant.dev'
+  gem 'mutant-rspec'
 end
 
 group :test do

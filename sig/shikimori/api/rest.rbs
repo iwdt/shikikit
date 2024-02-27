@@ -22,11 +22,12 @@ module Shikimori
 
       private
 
-      def request: (request_method, ::URI::Generic, ?body, **untyped) -> [Net::HTTPResponse, (::Hash[_ToS, Object] | nil)]
+      def request: (request_method, ::URI::Generic, ?body, **untyped) -> [Net::HTTPResponse, (::Hash[_ToS, Object] | nil | Array[untyped])]
       def build_request: (request_method, ::URI::Generic, **untyped) -> request
       def start_request: (::URI::Generic, request, ?body, **untyped) -> Net::HTTPResponse
-      def parse_response: (Net::HTTPResponse response) -> (::Hash[_ToS, untyped] | nil)
-      def json_parse_response_body: (String) -> (::Hash[_ToS, untyped] | nil)
+      def parse_response: (Net::HTTPResponse response) -> (::Hash[_ToS, untyped] | Array[untyped] | nil)
+      def json_parse_response_errors: (String) -> (String | nil)
+      def json_parse_response_body: (String) -> (::Hash[_ToS, untyped] | Array[untyped] | nil)
       def headers_from: (Hash[untyped, untyped]) -> Hash[String, String]
       def query_params_from: (::URI::Generic, Hash[untyped, untyped]) -> untyped
     end
