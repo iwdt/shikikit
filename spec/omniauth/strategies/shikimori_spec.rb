@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-OmniAuth.config.logger = Logger.new('/dev/null')
+OmniAuth.config.logger = Logger.new(File::NULL)
 
 RSpec.describe OmniAuth::Strategies::Shikimori, type: :strategy do
   let(:client_id) { 'fake-client-id' }
@@ -111,7 +111,7 @@ RSpec.describe OmniAuth::Strategies::Shikimori, type: :strategy do
     end
 
     describe '#info' do
-      include_examples 'a #info method'
+      it_behaves_like 'a #info method'
     end
   end
 
@@ -131,7 +131,7 @@ RSpec.describe OmniAuth::Strategies::Shikimori, type: :strategy do
     end
 
     describe '#info' do
-      include_examples 'a #info method'
+      it_behaves_like 'a #info method'
     end
   end
 end

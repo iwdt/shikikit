@@ -17,7 +17,7 @@ module Shikimori
 
       def get: (::URI::Generic, **untyped) -> untyped
       def post: (::URI::Generic, Hash[_ToS, untyped] data, **untyped) -> untyped
-      def put: (::URI::Generic, Hash[_ToS, Object] data, **untyped) -> untyped
+      def put: (::URI::Generic, Hash[_ToS, untyped] data, **untyped) -> untyped
       def delete: (::URI::Generic, **untyped) -> bool
 
       private

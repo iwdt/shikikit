@@ -23,14 +23,14 @@ module Shikimori
 
       def authorize_url(params = {})
         # Shikimori only works with `+` sign, not encoded value
-        super(params).gsub(SCOPE_JOIN_ENCODED_SYMBOL, SCOPE_JOIN_SYMBOL)
+        super.gsub(SCOPE_JOIN_ENCODED_SYMBOL, SCOPE_JOIN_SYMBOL)
       end
 
       def get_token(params, access_token_opts = {}, extract_access_token = nil, &block)
         params[:headers] ||= {}
         params[:headers]['User-Agent'] ||= @app_name
 
-        super(params, access_token_opts, extract_access_token, &block)
+        super
       end
 
       def config

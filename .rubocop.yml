@@ -1,5 +1,5 @@
 # Extensions
-require:
+plugins:
   - rubocop-performance
   - rubocop-rspec
   - rubocop-rake
@@ -14,6 +14,9 @@ AllCops:
 Naming/FileName:
   Exclude:
     - lib/*.rb
+
+Naming/PredicateMethod:
+  Enabled: false
 
 Metrics/MethodLength:
   CountAsOne: ['array', 'heredoc', 'hash']
@@ -36,9 +39,6 @@ RSpec/MultipleExpectations:
 
 RSpec/MultipleMemoizedHelpers:
   Max: 15
-
-RSpec/FilePath:
-  Enabled: false
 
 RSpec/SpecFilePathFormat:
   Enabled: false

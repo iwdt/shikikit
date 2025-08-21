@@ -1,4 +1,4 @@
-FROM ruby:3.0.6-bullseye
+FROM ruby:3.0.7-bullseye
 LABEL description="A development container for working with the Tools application."
 LABEL version="1.0"
 
