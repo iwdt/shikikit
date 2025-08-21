@@ -36,5 +36,5 @@ Gem::Specification.new do |spec|
   spec.executables = []
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'oauth2', '~> 2.0.0'
+  spec.add_dependency 'oauth2', '~> 2.0.0'
 end
