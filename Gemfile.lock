@@ -117,7 +117,7 @@ GEM
     rbs (3.6.1)
       logger
     regexp_parser (2.9.3)
-    rexml (3.4.1)
+    rexml (3.4.2)
     rspec (3.13.1)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
